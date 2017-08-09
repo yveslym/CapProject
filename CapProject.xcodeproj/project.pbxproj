@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2030741B1F36DA4400127897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2030741A1F36DA4400127897 /* GoogleService-Info.plist */; };
 		204EED601F30D81800F89A58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EED5F1F30D81800F89A58 /* Constants.swift */; };
+		205296BF1F3A00A300EBC8BA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296BE1F3A00A000EBC8BA /* Course.swift */; };
+		205296C11F3A0A3800EBC8BA /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C01F3A0A3700EBC8BA /* Attendance.swift */; };
+		205296C31F3A14A200EBC8BA /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C21F3A14A200EBC8BA /* Classes.swift */; };
+		205296C51F3A32B000EBC8BA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C41F3A32B000EBC8BA /* Post.swift */; };
+		205296C71F3A443E00EBC8BA /* teacherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C61F3A443D00EBC8BA /* teacherLoginViewController.swift */; };
+		205296CC1F3A583400EBC8BA /* teacherRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296CB1F3A583400EBC8BA /* teacherRegisterViewController.swift */; };
+		205296D01F3B6FE100EBC8BA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205296CF1F3B6FE100EBC8BA /* SWRevealViewController.m */; };
+		205296D41F3B74F000EBC8BA /* StudentHomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */; };
+		205296D61F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */; };
 		205752D51F3388FB00EB88B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205752D41F3388FB00EB88B7 /* Helpers.swift */; };
 		209FB2591F358D670086B74B /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209FB2581F358D670086B74B /* UserType.swift */; };
-		209FB25B1F35A9970086B74B /* StudentReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209FB25A1F35A9960086B74B /* StudentReg.swift */; };
 		20C43BDF1F2EE9CA00C689D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */; };
 		20C43BE11F2EE9CA00C689D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BE01F2EE9CA00C689D3 /* ViewController.swift */; };
 		20C43BE41F2EE9CA00C689D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BE21F2EE9CA00C689D3 /* Main.storyboard */; };
 		20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BE51F2EE9CB00C689D3 /* CapProject.xcdatamodeld */; };
 		20C43BE91F2EE9CB00C689D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */; };
 		20C43BEC1F2EE9CB00C689D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BEA1F2EE9CB00C689D3 /* LaunchScreen.storyboard */; };
-		20C43BF41F2EE9E600C689D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BF31F2EE9E600C689D3 /* GoogleService-Info.plist */; };
-		20C43BFC1F2EED9100C689D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BFB1F2EED9100C689D3 /* LoginViewController.swift */; };
 		20C43BFF1F2EF4CD00C689D3 /* loginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BFE1F2EF4CD00C689D3 /* loginNetwork.swift */; };
 		20C43C011F2EFB6E00C689D3 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C001F2EFB6E00C689D3 /* user.swift */; };
 		20C43C051F2F9BCC00C689D3 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C041F2F9BCC00C689D3 /* Student.swift */; };
 		20C43C071F2F9C0100C689D3 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C061F2F9C0100C689D3 /* Teacher.swift */; };
 		20C43C091F2F9DC000C689D3 /* TeacherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C081F2F9DC000C689D3 /* TeacherServices.swift */; };
 		20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C0A1F2FA28300C689D3 /* StudentService.swift */; };
+		20F82D561F378BDC0011A5FD /* chooseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */; };
+		20F82D581F37D5C20011A5FD /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */; };
+		20F82D5A1F37DFCD0011A5FD /* studentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */; };
 		20FE85901F34DF4A00C9FA9D /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FE858F1F34DF4A00C9FA9D /* Storyboard+Utility.swift */; };
 		20FE85921F34E8B000C9FA9D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FE85911F34E8B000C9FA9D /* Login.storyboard */; };
 		A13C5FC199FD940C44B2B104 /* Pods_CapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D3C796D3874828CF6A042A /* Pods_CapProject.framework */; };
@@ -32,10 +42,21 @@
 
 /* Begin PBXFileReference section */
 		01F78F2F7E2DA41DC0866B15 /* Pods-CapProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CapProject/Pods-CapProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2030741A1F36DA4400127897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Service Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		204EED5F1F30D81800F89A58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Service Supporting/Constants.swift"; sourceTree = "<group>"; };
+		205296BE1F3A00A000EBC8BA /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Course.swift; path = Models/Course.swift; sourceTree = "<group>"; };
+		205296C01F3A0A3700EBC8BA /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendance.swift; path = Models/Attendance.swift; sourceTree = "<group>"; };
+		205296C21F3A14A200EBC8BA /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		205296C41F3A32B000EBC8BA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		205296C61F3A443D00EBC8BA /* teacherLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = teacherLoginViewController.swift; sourceTree = "<group>"; };
+		205296CB1F3A583400EBC8BA /* teacherRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = teacherRegisterViewController.swift; path = Controllers/teacherRegisterViewController.swift; sourceTree = "<group>"; };
+		205296CD1F3B6FD200EBC8BA /* CapProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CapProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		205296CE1F3B6FE100EBC8BA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		205296CF1F3B6FE100EBC8BA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHomePageTableViewController.swift; sourceTree = "<group>"; };
+		205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentMenuBarViewController.swift; path = Controllers/StudentViewController/StudentMenuBarViewController.swift; sourceTree = "<group>"; };
 		205752D41F3388FB00EB88B7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Services/Helpers.swift; sourceTree = "<group>"; };
 		209FB2581F358D670086B74B /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserType.swift; path = Services/UserType.swift; sourceTree = "<group>"; };
-		209FB25A1F35A9960086B74B /* StudentReg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentReg.swift; path = Controllers/StudentReg.swift; sourceTree = "<group>"; };
 		20C43BDB1F2EE9CA00C689D3 /* CapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C43BE01F2EE9CA00C689D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,14 +65,15 @@
 		20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C43BEB1F2EE9CB00C689D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C43BED1F2EE9CB00C689D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20C43BF31F2EE9E600C689D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		20C43BFB1F2EED9100C689D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		20C43BFE1F2EF4CD00C689D3 /* loginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginNetwork.swift; path = DBNetwork/loginNetwork.swift; sourceTree = "<group>"; };
 		20C43C001F2EFB6E00C689D3 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = user.swift; path = Views/user.swift; sourceTree = "<group>"; };
 		20C43C041F2F9BCC00C689D3 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = Models/Student.swift; sourceTree = "<group>"; };
 		20C43C061F2F9C0100C689D3 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Teacher.swift; path = Models/Teacher.swift; sourceTree = "<group>"; };
 		20C43C081F2F9DC000C689D3 /* TeacherServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherServices.swift; path = Services/TeacherServices.swift; sourceTree = "<group>"; };
 		20C43C0A1F2FA28300C689D3 /* StudentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentService.swift; path = Services/StudentService.swift; sourceTree = "<group>"; };
+		20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chooseUserViewController.swift; path = Controllers/chooseUserViewController.swift; sourceTree = "<group>"; };
+		20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentLoginViewController.swift; path = Controllers/StudentLoginViewController.swift; sourceTree = "<group>"; };
+		20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = studentRegisterViewController.swift; path = Controllers/studentRegisterViewController.swift; sourceTree = "<group>"; };
 		20FE858F1F34DF4A00C9FA9D /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Service Supporting/Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		20FE85911F34E8B000C9FA9D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		25EEB518E361AE18DF3C2DA9 /* Pods-CapProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CapProject/Pods-CapProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,11 +95,43 @@
 		204EED5C1F30D2A300F89A58 /* Service Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				205296CE1F3B6FE100EBC8BA /* SWRevealViewController.h */,
+				205296CF1F3B6FE100EBC8BA /* SWRevealViewController.m */,
+				2030741A1F36DA4400127897 /* GoogleService-Info.plist */,
 				209FB2581F358D670086B74B /* UserType.swift */,
 				204EED5F1F30D81800F89A58 /* Constants.swift */,
 				20FE858F1F34DF4A00C9FA9D /* Storyboard+Utility.swift */,
+				205296CD1F3B6FD200EBC8BA /* CapProject-Bridging-Header.h */,
 			);
 			name = "Service Supporting";
+			sourceTree = "<group>";
+		};
+		205296C81F3A4A9100EBC8BA /* Student View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */,
+				20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */,
+				205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */,
+				205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */,
+			);
+			name = "Student View Controller";
+			sourceTree = "<group>";
+		};
+		205296C91F3A4AB300EBC8BA /* Teacher View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				205296C61F3A443D00EBC8BA /* teacherLoginViewController.swift */,
+				205296CB1F3A583400EBC8BA /* teacherRegisterViewController.swift */,
+			);
+			name = "Teacher View Controller";
+			sourceTree = "<group>";
+		};
+		205296CA1F3A4B6B00EBC8BA /* Intro View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */,
+			);
+			name = "Intro View Controllers";
 			sourceTree = "<group>";
 		};
 		20C43BD21F2EE9CA00C689D3 = {
@@ -101,20 +155,19 @@
 		20C43BDD1F2EE9CA00C689D3 /* CapProject */ = {
 			isa = PBXGroup;
 			children = (
+				20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */,
 				204EED5C1F30D2A300F89A58 /* Service Supporting */,
 				20C43C031F2F9AA400C689D3 /* Services */,
-				20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */,
 				20C43BFD1F2EF42600C689D3 /* DBNetwork */,
 				20C43BF81F2EECA900C689D3 /* Storyboards */,
 				20C43BF61F2EEC6800C689D3 /* Models */,
 				20C43BF71F2EEC8200C689D3 /* Views */,
 				20C43BF51F2EEC5600C689D3 /* Controllers */,
-				20C43BE01F2EE9CA00C689D3 /* ViewController.swift */,
 				20C43BE21F2EE9CA00C689D3 /* Main.storyboard */,
+				20C43BE01F2EE9CA00C689D3 /* ViewController.swift */,
 				20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */,
 				20C43BEA1F2EE9CB00C689D3 /* LaunchScreen.storyboard */,
 				20C43BED1F2EE9CB00C689D3 /* Info.plist */,
-				20C43BF31F2EE9E600C689D3 /* GoogleService-Info.plist */,
 				20C43BE51F2EE9CB00C689D3 /* CapProject.xcdatamodeld */,
 			);
 			path = CapProject;
@@ -123,8 +176,9 @@
 		20C43BF51F2EEC5600C689D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				20C43BFB1F2EED9100C689D3 /* LoginViewController.swift */,
-				209FB25A1F35A9960086B74B /* StudentReg.swift */,
+				205296C81F3A4A9100EBC8BA /* Student View Controller */,
+				205296C91F3A4AB300EBC8BA /* Teacher View Controller */,
+				205296CA1F3A4B6B00EBC8BA /* Intro View Controllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +188,10 @@
 			children = (
 				20C43C041F2F9BCC00C689D3 /* Student.swift */,
 				20C43C061F2F9C0100C689D3 /* Teacher.swift */,
+				205296BE1F3A00A000EBC8BA /* Course.swift */,
+				205296C01F3A0A3700EBC8BA /* Attendance.swift */,
+				205296C21F3A14A200EBC8BA /* Classes.swift */,
+				205296C41F3A32B000EBC8BA /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -225,6 +283,7 @@
 					20C43BDA1F2EE9CA00C689D3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = K7R433H2CL;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -253,8 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C43BEC1F2EE9CB00C689D3 /* LaunchScreen.storyboard in Resources */,
-				20C43BF41F2EE9E600C689D3 /* GoogleService-Info.plist in Resources */,
 				20C43BE91F2EE9CB00C689D3 /* Assets.xcassets in Resources */,
+				2030741B1F36DA4400127897 /* GoogleService-Info.plist in Resources */,
 				20FE85921F34E8B000C9FA9D /* Login.storyboard in Resources */,
 				20C43BE41F2EE9CA00C689D3 /* Main.storyboard in Resources */,
 			);
@@ -315,21 +374,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C43BFC1F2EED9100C689D3 /* LoginViewController.swift in Sources */,
 				204EED601F30D81800F89A58 /* Constants.swift in Sources */,
 				209FB2591F358D670086B74B /* UserType.swift in Sources */,
 				20C43BE11F2EE9CA00C689D3 /* ViewController.swift in Sources */,
+				205296D01F3B6FE100EBC8BA /* SWRevealViewController.m in Sources */,
 				20C43C091F2F9DC000C689D3 /* TeacherServices.swift in Sources */,
 				20FE85901F34DF4A00C9FA9D /* Storyboard+Utility.swift in Sources */,
+				205296BF1F3A00A300EBC8BA /* Course.swift in Sources */,
+				205296C71F3A443E00EBC8BA /* teacherLoginViewController.swift in Sources */,
+				205296C11F3A0A3800EBC8BA /* Attendance.swift in Sources */,
 				20C43C011F2EFB6E00C689D3 /* user.swift in Sources */,
-				209FB25B1F35A9970086B74B /* StudentReg.swift in Sources */,
+				20F82D561F378BDC0011A5FD /* chooseUserViewController.swift in Sources */,
 				20C43BDF1F2EE9CA00C689D3 /* AppDelegate.swift in Sources */,
 				20C43C071F2F9C0100C689D3 /* Teacher.swift in Sources */,
 				205752D51F3388FB00EB88B7 /* Helpers.swift in Sources */,
+				205296C31F3A14A200EBC8BA /* Classes.swift in Sources */,
+				20F82D581F37D5C20011A5FD /* StudentLoginViewController.swift in Sources */,
+				20F82D5A1F37DFCD0011A5FD /* studentRegisterViewController.swift in Sources */,
+				205296CC1F3A583400EBC8BA /* teacherRegisterViewController.swift in Sources */,
+				205296D41F3B74F000EBC8BA /* StudentHomePageTableViewController.swift in Sources */,
 				20C43BFF1F2EF4CD00C689D3 /* loginNetwork.swift in Sources */,
 				20C43C051F2F9BCC00C689D3 /* Student.swift in Sources */,
 				20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */,
+				205296D61F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift in Sources */,
 				20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */,
+				205296C51F3A32B000EBC8BA /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +522,14 @@
 			baseConfigurationReference = 01F78F2F7E2DA41DC0866B15 /* Pods-CapProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K7R433H2CL;
 				INFOPLIST_FILE = CapProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yveslym-corp.CapProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CapProject/CapProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -467,11 +539,13 @@
 			baseConfigurationReference = 25EEB518E361AE18DF3C2DA9 /* Pods-CapProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K7R433H2CL;
 				INFOPLIST_FILE = CapProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yveslym-corp.CapProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CapProject/CapProject-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

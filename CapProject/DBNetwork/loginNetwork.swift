@@ -8,19 +8,51 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseDatabase
+import FirebaseAuth.FIRUser
 import Firebase
-
-typealias FIRUser         = FirebaseAuth.user
+import UIKit
 
 struct NetworkConstant
 {
     
- let uid                   = Auth.auth().currentUser?.uid
-static let currentUser    = Auth.auth().currentUser!
+static let currentUserUID = Auth.auth().currentUser?.uid
 static let rootRef        = Database.database().reference()
-static let studentRef     = Database.database().reference().child("students").child((Auth.auth().currentUser?.uid)!)
-static let teacherRef     = Database.database().reference().child("teachers").child((Auth.auth().currentUser?.uid)!)
-static let studentInfoRef = Database.database().reference().child("students").child((uid).child("studentInfo")
+static let studentRef     = Database.database().reference().child("students").child((NetworkConstant.currentUserUID)!)
+static let teacherRef     = Database.database().reference().child("teachers").child((NetworkConstant.currentUserUID)!)
+static let studentInfoRef = NetworkConstant.studentRef.child("info")
+static let teacherInfoRef = NetworkConstant.teacherRef.child("info")
     
-static let teacherInfoRef = Database.database().reference().child("teachers").child(().child("teacherInfo")
+    //==> Mark Student update
+    
+    static func AddStudentinDatabase(withStudent student: Student){
+        
+        let StudentAtribute = [Constants.firstName: student.firstName, Constants.lastName: student.lastName, Constants.email: student.email,Constants.username:student.username, Constants.uid: NetworkConstant.currentUserUID]
+        NetworkConstant.studentInfoRef.setValue(StudentAtribute)
+    }
+    
+    static func updateStudentNumber(withNumber number: Int){
+        NetworkConstant.studentInfoRef.updateChildValues([Constants.phoneNumber:number])
+    }
+    
+    static func updateStudentUsername(withUsername username: String){
+        NetworkConstant.studentInfoRef.updateChildValues([Constants.username:username])
+    }
+    
+    //==> Mark Teacher Update
+    
+    static func AddTeacherinDatabase(withTeacher teacher: Teacher){
+        
+        let Attrs = [Constants.firstName: teacher.firstName,Constants.lastName: teacher.lastName, Constants.email: teacher.email, Constants.uid:NetworkConstant.currentUserUID]
+            NetworkConstant.teacherInfoRef.setValue(Attrs)
+    }
+    
+    static func updateTeacherUsername(withUsername username: String){
+        NetworkConstant.teacherInfoRef.updateChildValues([Constants.username:username])
+    }
+    
+    static func updateTeacherNumber(withNumber number: Int){
+        NetworkConstant.teacherInfoRef.updateChildValues([Constants.phoneNumber:number])
+    }
 }
+

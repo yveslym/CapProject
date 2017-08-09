@@ -20,6 +20,8 @@ class Teacher: NSObject{
     let phoneNumber : Int?
     var uid : String?
     let type = "teacher"
+    var course = [Course]()
+    var profilImage : UIImage
     
     
     private static var _current : Teacher?
@@ -37,6 +39,7 @@ class Teacher: NSObject{
         self.firstName = ""
         self.phoneNumber = 0
         self.uid = ""
+        self.profilImage = UIImage()
     }
     
     init(firstname: String, lastname: String,Username:String,email:String, phone:Int){
@@ -47,6 +50,7 @@ class Teacher: NSObject{
         self.password = ""
         self.phoneNumber = 0
         self.uid = ""
+        self.profilImage = UIImage()
         
     }
     
@@ -64,6 +68,7 @@ class Teacher: NSObject{
         self.uid = teacher?.uid
         self.password = ""
         self.username = teacher?.username
+        self.profilImage = (teacher?.profilImage)!
         
     }
     
@@ -92,6 +97,11 @@ class Teacher: NSObject{
             self.uid = Auth.auth().currentUser?.uid
         }
     }
+
+    func createCourse(withCourse course: Course){
+        self.course.append(course)
+    }
+    
 }
 
 

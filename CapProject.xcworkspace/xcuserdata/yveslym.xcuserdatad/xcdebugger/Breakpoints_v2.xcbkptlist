@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CapProject/DBNetwork/loginNetwork.swift"
-            timestampString = "523615656.266955"
+            filePath = "CapProject/Models/Student.swift"
+            timestampString = "523935382.583584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "teacherInfoRef"
-            landmarkType = "24">
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "CreateNewClass(withClass:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

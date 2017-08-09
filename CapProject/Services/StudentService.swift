@@ -8,45 +8,39 @@
 //Student
 
 import Foundation
-import FirebaseAuth
 import FirebaseDatabase
+import FirebaseAuth.FIRUser
 import Firebase
+import UIKit
 
 class StudentServices{
     
     
-    static func createNewStudent(withStudent student: Student){
+    
+    static func createNewStudent(_ firUser: FIRUser, student: Student, password: String, completion: @escaping (Student?) -> Void) {
         
-        
-        
-        guard let email   = student.email, let password = student.password
-            
+        guard let email   = student.email
             else {return}
         
-        // email should be check as edu domain before being passed in this function
-        Auth.auth().createUser(withEmail: email, password: password)
-        
-        ////////////////////////////////////////////////////////////////////////
-        //Procced the error call here, error FIRAuthErrorCodeEmailAlreadyInUse//
-        ///////////////////////////////////////////////////////////////////////
-        
-        let studentInfoRef   = NetworkConstant.studentInfoRef
-        
-                    //retrieve the student uid
-        student.uid = Auth.auth().currentUser?.uid
-        
-                    // Add the new student info in the database under child student info
-        studentInfoRef.setValue(["studentInfo": student]){(error,studentInfoRef) in
-            if let error      = error{
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(students,error) in
+            
+            if let error = error {
                 assertionFailure(error.localizedDescription)
-
+                
+                return completion(nil)
             }
-            Student.setCurrent(student, writeToUserDefault: true)
-        }
+            else{
+                NetworkConstant.AddStudentinDatabase(withStudent: student)            }
+        } )//end of sign up
+        
+        Student.setCurrent(student, writeToUserDefault: true)
+        completion(student)
+        
     }
     
+    
     static func RetrieveStudentInfo(ForUID uid: String, completion: @escaping (Student?)->Void){
-
+        
         let stringStudent = " studentInfo"
         
         let ref = NetworkConstant.rootRef.child( uid).child(stringStudent)
@@ -68,28 +62,33 @@ class StudentServices{
     static func SignInStudent(email: String!, password: String!)->Bool{
         
         var signinsuccess = false
-        let email         = String(email)
-        let password      = String(password)
         
-        Auth.auth().signIn(withEmail: email!, password: password!)
-        
-        /////////////////////////////////////////////////////////////////////////////
-        // procced herror handling here with error: FIRAuthErrorCodeWrongPassword//
-        ///////////////////////////////////////////////////////////////////////////
-        let ref = NetworkConstant.studentInfoRef
-
-        ref.observeSingleEvent(of: .value, with: {(snapshot) in
+        Auth.auth().signIn(withEmail: email!, password: password!, completion: {(student, error) in
             
-            guard let student = Student(snapshot: snapshot)
+            if error == nil{
+                print(error.debugDescription)
+            }
+            else{
+                let ref = NetworkConstant.studentInfoRef
                 
-                else{return}
-            
-            Student.setCurrent(student, writeToUserDefault: true)
-            signinsuccess = true
+                ref.observeSingleEvent(of: .value, with: {(snapshot) in
+                    
+                    guard let student = Student(snapshot: snapshot)
+                        
+                        else{return}
+                    
+                    Student.setCurrent(student, writeToUserDefault: true)
+                    signinsuccess = true
+                    
+                })
+            }
         })
-return signinsuccess
-}
-
+        
+        return signinsuccess
+    }
+    
+    
+    
     static func logOutStudent()->Bool{
         
         ////////////////////////////////////////

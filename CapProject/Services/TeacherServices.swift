@@ -13,34 +13,17 @@ import Firebase
 
 class TeacherServices{
     
-    static func createTeacher(withTeacher teacher: Teacher, completion:@escaping(Teacher?)->Void){
+    static func createTeacher(withTeacher teacher: Teacher, password: String){
         
-        let teacherInfoRef = NetworkConstant.teacherInfoRef
-        
-        // check if email domain is edu before passing student here
-        guard let email = teacher.email,let password = teacher.password
+        guard let email = teacher.email
             else {return}
         
         Auth.auth().createUser(withEmail: email, password: password)
         
-        ////////////////////////////////////////////////////////////////////////
-        //Procced the error call here, error FIRAuthErrorCodeEmailAlreadyInUse//
-        ///////////////////////////////////////////////////////////////////////
-        
-        //retrieve new teacher uid
         teacher.uid = Auth.auth().currentUser?.uid
         
-        // Add teacher into the database
-        
-        teacherInfoRef.setValue(["teacherInfo":teacher]){(error,teacherInfoRef)in
-            if let error      = error{
-                assertionFailure(error.localizedDescription)
-                return completion(nil)
-            }
-            Teacher.setCurrent(teacher: teacher, WritetoTeacherDefault: true)
-        }
-        completion(teacher)
-    }
+        NetworkConstant.AddTeacherinDatabase(withTeacher: teacher)
+    }//end of create new teacher
     
     static func retrieveTeacherInfo(WithUID uid: String,completion:@escaping (String?)->Void){
         

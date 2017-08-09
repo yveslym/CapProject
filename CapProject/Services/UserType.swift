@@ -86,42 +86,6 @@ class UsersType{
 
 
 
-//    
-//    static func SignInStudent(email: String!, password: String!)->Bool{
-//        
-//        var signinsuccess = false
-//        let email         = String(email)
-//        let password      = String(password)
-//        
-//        Auth.auth().signIn(withEmail: email!, password: password!)
-//        
-//        /////////////////////////////////////////////////////////////////////////////
-//        // procced herror handling here with error: FIRAuthErrorCodeWrongPassword//
-//        ///////////////////////////////////////////////////////////////////////////
-//        
-//        let current = Auth.auth().currentUser
-//        
-//        
-//            
-//        }
-//        
-//        
-//        
-//        let ref = NetworkConstant.studentInfoRef
-//        
-//        ref.observeSingleEvent(of: .value, with: {(snapshot) in
-//            
-//            guard let student = Student(snapshot: snapshot)
-//                
-//                else{return}
-//            
-//            Student.setCurrent(student, writeToUserDefault: true)
-//            signinsuccess = true
-//        })
-//        return signinsuccess
-//    }
-//
-//    
 
 
 

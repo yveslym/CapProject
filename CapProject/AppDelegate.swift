@@ -122,7 +122,7 @@ extension AppDelegate{
     }
     window?.rootViewController = initialVC
     window?.makeKeyAndVisible()
-}
+    }
 }
 
 

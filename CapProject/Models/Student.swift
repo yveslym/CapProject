@@ -19,6 +19,8 @@ class Student: NSObject{
     let phoneNumber : Int?
     var uid : String?
     let type = "student"
+    var classes = [Classes]()
+    
     private static var _current: Student?
     
     static var current: Student{
@@ -72,8 +74,10 @@ class Student: NSObject{
             let userType = UsersType()
             
             userType.saveStudent(withStudent: student, archivethisStudent: true)
-            let data = NSKeyedArchiver.archivedData(withRootObject: userType)   //archive usertype with student data in it
-            UserDefaults.standard.set(data, forKey: Constants.current)  //set user default
+           // let data = NSKeyedArchiver.archivedData(withRootObject: userType)   //archive usertype with student data in it
+            
+            
+            //UserDefaults.standard.set(userType, forKey: Constants.current)  //set user default
         } //end of archiving process
         _current = student
     }// end of setting current
@@ -88,7 +92,10 @@ class Student: NSObject{
             
             self.uid = Auth.auth().currentUser?.uid
         }
-        
+    }
+    
+    func CreateNewClass(withClass Class: Classes){
+        self.classes.append(Class)
     }
 }
 
