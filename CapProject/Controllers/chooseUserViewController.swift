@@ -11,21 +11,22 @@ import UIKit
 class chooseUserViewController: UIViewController {
 
     
-    @IBOutlet weak var StudentButton: UIButton!
-    
+    @IBOutlet weak var studentButton: UIButton!
+   
     @IBOutlet weak var teacherButton: UIButton!
     
-    
     @IBAction func studentButtonTapped(_ sender: Any) {
-        
-        let login = "login"
-        self.performSegue(withIdentifier: login, sender:self)
-        
+        performSegue(withIdentifier: "login", sender: self)
     }
+    
     
     @IBAction func teacherButtonTapped(_ sender: Any) {
+        let login = "teacherLogin"
         
+        self.performSegue(withIdentifier: login, sender: self)
     }
+    
+    
     
     
     

@@ -18,6 +18,10 @@ class teacherLoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    
+    @IBOutlet weak var registerButton: UIButton!
+    
+    
     @IBAction func registerButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "teacherRegister", sender: self)
         

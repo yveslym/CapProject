@@ -7,47 +7,46 @@
 //
 
 import Foundation
+import Firebase
+
 class Course: NSObject{
     
-    private var courseName : String?
-    private var courseID: String?
-    private var courseDescription: String?
-    private var teacher: Teacher?
-    private var student = [Student]()
+    var courseName : String?
+    var section : String?
+    var courseID: String?
+    var Description: String?
+    var teacher: Teacher?
+    var teacherID = String()
+    var student = [Student]()
+    var listOfAttendance = [String]()
+    var todayAttendance : String?
+    var attendance = [Attendance]()
+    
     // add course start time and end time
     
     override init (){
         self.courseName = ""
         self.courseID   = ""
-        self.courseDescription = ""
+        self.Description = ""
+        self.section = ""
        
     }
-    func setCourseDescription( withDescription descrition: String){
-        self.courseDescription = descrition
+    
+    init?(snapshot: DataSnapshot) {
+        
+        guard let dict = snapshot.value as? [String: Any]
+            
+            else{return nil}
+        let course = dict[Constants.course] as? Course
+        self.courseID = course?.courseID
+        self.courseName = course?.courseName
+        self.Description = course?.Description
+        self.todayAttendance = course?.todayAttendance
+        self.teacherID = (course?.teacherID)!
+        
+        
+        
     }
-    func setCourseName (withName name: String){
-        self.courseName = name
-    }
-    func setCourseID (withID ID: String){
-        self.courseID = ID
-    }
-    
-    func setTeacher(withTeacher teacher: Teacher){
-        self.teacher = teacher
-    }
-    func addStudent(withStudent student:Student){
-        self.student.append(student)
-    }
-    
-    //==> Mark 'Getter'
-    
-    func getName()-> String{return self.courseName!}
-    
-    func getID()->String {return self.courseID!}
-    
-    func getDescrition()->String{return self.courseDescription!}
-    
-    func getTeacher()->Teacher{return self.teacher!}
     
     func getStudent(withUID studentUID: String) -> Student{
         
@@ -60,6 +59,31 @@ class Course: NSObject{
     return studentFind
     }
     
+    // function to generate new attendance
+    func newAttendancekey()->String{
+        
+        
+        let key = " yves"
+//            var newAttendance = NetworkConstant.course.courseRef.child(self.courseID!).child(Constants.attendance).childByAutoId()
+//            key = newAttendance.key
+//        
+//        if key != nil{
+//        
+//            self.listOfAttendance.append(key!)
+//            todayAttendance = key!
+//        }
+//        else{
+//            print ("Couldn't add a create attendance")
+//            
+//            key = ""
+//        }
+    return key
+    }
+    
+    
+
+
+
 }
 
 

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        configureInitialleVC(for: window)
+   //    configureInitialleVC(for: window)
         
         // Override point for customization after application launch.
         return true

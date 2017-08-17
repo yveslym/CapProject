@@ -44,22 +44,25 @@ class StudentLoginViewController: UIViewController {
     //Sign in student when login button tapped
     @IBAction func loginButtonTapped(_ sender: Any) {
         
-        if  StudentServices.SignInStudent(email: EmailTF.text, password: password.text) == true{
+        StudentServices.SignInStudent(email: EmailTF.text, password: password.text, completion: {(student) in
+        
+        if student != nil
+            {
             let initialVC = UIStoryboard.initialViewController(for: .main)
             self.view.window?.rootViewController = initialVC
             self.view.window?.makeKeyAndVisible()
         }
-        else{
-            print("email or password incorrect")
-        }
+        else {
+            print(" COULD NOT LOGIN")
+            }
     
-    }//end of login
-    
+    })//end of login
+    }
     
         //register student segue
     
     @IBAction func registerBT(_ sender: Any) {
-        let register = "studentRegister"
+        let register = "register"
         print ("register button tapped")
         self.performSegue(withIdentifier: register, sender: self)
         

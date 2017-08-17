@@ -11,15 +11,16 @@ import FirebaseDatabase
 import Firebase
 class Student: NSObject{
     
-    let username: String?
-    let firstName: String?
-    let lastName: String?
+    var username: String?
+    var firstName: String?
+    var lastName: String?
     let email : String?
     let password:String?
     let phoneNumber : Int?
     var uid : String?
     let type = "student"
-    var classes = [Classes]()
+   var course = [Course]()
+    var level: String?
     
     private static var _current: Student?
     
@@ -40,7 +41,18 @@ class Student: NSObject{
         self.phoneNumber = 0
     }
     
-    init(firstname: String, lastname: String,Username:String,email:String, password:String, phone: Int){
+    init (withEmail email: String, password: String){
+        self.firstName = ""
+        self.lastName  = ""
+        self.email     = email
+        self.username  = ""
+        self.password  = password
+        self.uid       = ""
+        self.phoneNumber = 0
+
+    }
+    
+    init(firstname: String = "", lastname: String = "",Username:String = "",email:String = "", password:String = "", phone: Int = 0){
         self.firstName = firstname
         self.lastName  = lastname
         self.email     = email
@@ -94,12 +106,11 @@ class Student: NSObject{
         }
     }
     
-    func CreateNewClass(withClass Class: Classes){
-        self.classes.append(Class)
+    func AddCourse (withCourse course: Course!){
+        self.course.append(course)
     }
+
 }
-
-
 
 
 

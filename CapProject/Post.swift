@@ -8,42 +8,39 @@
 
 import Foundation
 import UIKit
+import Firebase
 class Post: NSObject{
     
-    var teacherUsername : String?
-    var postNote: String?
+    var teacherLastName : String?
+    var postDescrition: String?
     var url: String?
     var teacherPicture: UIImage?
     var date: Date?
+    var postID:String?
     
- 
+    override init (){
+        self.date = Date()
+        self.postDescrition = ""
+        self.url = ""
+        self.teacherPicture = UIImage()
+        self.teacherLastName = ""
+        self.postID = ""
+    }
     
-    
-    
-    
-    
-    //==> Mark setter
-    
-//    func setTeacherUsername(withUsername username: String){
-//        self.teacherUsername = username
-//    }
-//    
-//    func setTeacherPicture(withPictureLink pictureLink: String){
-//        self.teacherPicture = pictureLink
-//    }
-//    
-//    func setUrl (withUrl url: String){
-//        self.url = url
-//    }
-//    
-//    func setDate (withDate date: Date){
-//        self.date = date
-//    }
-//    
-//    //==> Mark getter
-//    func getTeacherUsername()-> {return self.teacherUsername!}
-//    func getUrl()-> String{return self.url!}
-    
+    init?(snapshot: DataSnapshot) {
+        
+        guard let dict = snapshot.value as? [String: Any]
+            
+            else{return nil}
+        
+        let post = dict["info"] as? Post
+        self.date = post?.date
+        self.postDescrition = post?.postDescrition
+        self.teacherLastName = post?.teacherLastName
+        self.postID = post?.postID
+        self.teacherPicture = UIImage()
+
+    }
 }
 
 

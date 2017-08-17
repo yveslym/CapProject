@@ -11,27 +11,27 @@
 import Foundation
 class Classes: NSObject{
     
-   private var course = Course()
-   private var attendance = Attendance()
+    var course = Course()
+    var attendance = [Attendance]()
    // Add list of post
     
-    //==> Mark Getter
-    func getCourse()->Course{return self.course}
-    
-    func getAttendance()->Attendance{return self.attendance}
-    
-    //==> Mark Setter
-    
-    func setCourse(withCourse course: Course){
-        self.course = course
-    }
-
-    func setAttendance(withAttendaance attendance: Attendance){
-        self.attendance = attendance
-    }
+//    //==> Mark Getter
+//    func getCourse()->Course{return self.course}
+//    
+//    func getAttendance()->Attendance{return self.attendance}
+//    
+//    //==> Mark Setter
+//    
+//    func setCourse(withCourse course: Course){
+//        self.course = course
+//    }
+//
+//    func setAttendance(withAttendaance attendance: Attendance){
+//        self.attendance = attendance
+//    }
     
     init (withCourse course: Course, attendance: Attendance){
         self.course = course
-        self.attendance = attendance
+        self.attendance.append(attendance)
     }
 }

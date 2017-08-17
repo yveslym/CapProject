@@ -10,4 +10,11 @@ target 'CapProject' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'SwiftQRCode'
+
+use_frameworks!
+
+pod 'ActionSheetPicker-3.0'
+pod "EFQRCode", '~> 1.2.7'
 end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2001AD171F3D6771006DA313 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001AD161F3D6771006DA313 /* PostService.swift */; };
+		202290A41F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202290A31F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift */; };
 		2030741B1F36DA4400127897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2030741A1F36DA4400127897 /* GoogleService-Info.plist */; };
 		204EED601F30D81800F89A58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EED5F1F30D81800F89A58 /* Constants.swift */; };
 		205296BF1F3A00A300EBC8BA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296BE1F3A00A000EBC8BA /* Course.swift */; };
@@ -16,22 +18,30 @@
 		205296C71F3A443E00EBC8BA /* teacherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C61F3A443D00EBC8BA /* teacherLoginViewController.swift */; };
 		205296CC1F3A583400EBC8BA /* teacherRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296CB1F3A583400EBC8BA /* teacherRegisterViewController.swift */; };
 		205296D01F3B6FE100EBC8BA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205296CF1F3B6FE100EBC8BA /* SWRevealViewController.m */; };
-		205296D41F3B74F000EBC8BA /* StudentHomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */; };
-		205296D61F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */; };
 		205752D51F3388FB00EB88B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205752D41F3388FB00EB88B7 /* Helpers.swift */; };
+		2064A3271F3CA90900EC5C27 /* StudentScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3261F3CA90900EC5C27 /* StudentScheduleViewController.swift */; };
+		2064A3291F3CA95300EC5C27 /* StudentProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3281F3CA95300EC5C27 /* StudentProfessorViewController.swift */; };
+		2064A32B1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A32A1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift */; };
+		2064A32D1F3CAA0E00EC5C27 /* StudentSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A32C1F3CAA0E00EC5C27 /* StudentSettingViewController.swift */; };
+		2064A32F1F3CAA8100EC5C27 /* StudentAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A32E1F3CAA8100EC5C27 /* StudentAssignmentViewController.swift */; };
+		2064A3311F3CAB7C00EC5C27 /* StudentResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3301F3CAB7C00EC5C27 /* StudentResourceViewController.swift */; };
+		2064A3591F3CC03300EC5C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3581F3CC03300EC5C27 /* ViewController.swift */; };
+		2064A35B1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A35A1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift */; };
+		207912591F424F6300BF4C4A /* AttendanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207912581F424F6300BF4C4A /* AttendanceServices.swift */; };
 		209FB2591F358D670086B74B /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209FB2581F358D670086B74B /* UserType.swift */; };
 		20C43BDF1F2EE9CA00C689D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */; };
-		20C43BE11F2EE9CA00C689D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BE01F2EE9CA00C689D3 /* ViewController.swift */; };
 		20C43BE41F2EE9CA00C689D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BE21F2EE9CA00C689D3 /* Main.storyboard */; };
 		20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BE51F2EE9CB00C689D3 /* CapProject.xcdatamodeld */; };
 		20C43BE91F2EE9CB00C689D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */; };
 		20C43BEC1F2EE9CB00C689D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C43BEA1F2EE9CB00C689D3 /* LaunchScreen.storyboard */; };
-		20C43BFF1F2EF4CD00C689D3 /* loginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BFE1F2EF4CD00C689D3 /* loginNetwork.swift */; };
+		20C43BFF1F2EF4CD00C689D3 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43BFE1F2EF4CD00C689D3 /* NetworkConstant.swift */; };
 		20C43C011F2EFB6E00C689D3 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C001F2EFB6E00C689D3 /* user.swift */; };
 		20C43C051F2F9BCC00C689D3 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C041F2F9BCC00C689D3 /* Student.swift */; };
 		20C43C071F2F9C0100C689D3 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C061F2F9C0100C689D3 /* Teacher.swift */; };
 		20C43C091F2F9DC000C689D3 /* TeacherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C081F2F9DC000C689D3 /* TeacherServices.swift */; };
 		20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C0A1F2FA28300C689D3 /* StudentService.swift */; };
+		20C7E7FA1F3FA36600B92601 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7E7F91F3FA36600B92601 /* StudentProfileViewController.swift */; };
+		20EA5FC01F43475F0087C869 /* CourseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA5FBF1F43475F0087C869 /* CourseServices.swift */; };
 		20F82D561F378BDC0011A5FD /* chooseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */; };
 		20F82D581F37D5C20011A5FD /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */; };
 		20F82D5A1F37DFCD0011A5FD /* studentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */; };
@@ -42,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		01F78F2F7E2DA41DC0866B15 /* Pods-CapProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CapProject/Pods-CapProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2001AD161F3D6771006DA313 /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostService.swift; path = Services/PostService.swift; sourceTree = "<group>"; };
+		202290A31F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentSideBarMenuTableViewController.swift; path = Controllers/StudentViewController/StudentSideBarMenuTableViewController.swift; sourceTree = "<group>"; };
 		2030741A1F36DA4400127897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Service Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		204EED5F1F30D81800F89A58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Service Supporting/Constants.swift"; sourceTree = "<group>"; };
 		205296BE1F3A00A000EBC8BA /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Course.swift; path = Models/Course.swift; sourceTree = "<group>"; };
@@ -53,24 +65,32 @@
 		205296CD1F3B6FD200EBC8BA /* CapProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CapProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		205296CE1F3B6FE100EBC8BA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		205296CF1F3B6FE100EBC8BA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHomePageTableViewController.swift; sourceTree = "<group>"; };
-		205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentMenuBarViewController.swift; path = Controllers/StudentViewController/StudentMenuBarViewController.swift; sourceTree = "<group>"; };
 		205752D41F3388FB00EB88B7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Services/Helpers.swift; sourceTree = "<group>"; };
+		2064A3261F3CA90900EC5C27 /* StudentScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentScheduleViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentScheduleViewController.swift"; sourceTree = "<group>"; };
+		2064A3281F3CA95300EC5C27 /* StudentProfessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentProfessorViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentProfessorViewController.swift"; sourceTree = "<group>"; };
+		2064A32A1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentAttendanceViewContoller.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentAttendanceViewContoller.swift"; sourceTree = "<group>"; };
+		2064A32C1F3CAA0E00EC5C27 /* StudentSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentSettingViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentSettingViewController.swift"; sourceTree = "<group>"; };
+		2064A32E1F3CAA8100EC5C27 /* StudentAssignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentAssignmentViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentAssignmentViewController.swift"; sourceTree = "<group>"; };
+		2064A3301F3CAB7C00EC5C27 /* StudentResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentResourceViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentResourceViewController.swift"; sourceTree = "<group>"; };
+		2064A3581F3CC03300EC5C27 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2064A35A1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentHomePageTableViewController.swift; path = Controllers/StudentViewController/StudentHomePageTableViewController.swift; sourceTree = "<group>"; };
+		207912581F424F6300BF4C4A /* AttendanceServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttendanceServices.swift; path = Services/AttendanceServices.swift; sourceTree = "<group>"; };
 		209FB2581F358D670086B74B /* UserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserType.swift; path = Services/UserType.swift; sourceTree = "<group>"; };
 		20C43BDB1F2EE9CA00C689D3 /* CapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C43BDE1F2EE9CA00C689D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20C43BE01F2EE9CA00C689D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20C43BE31F2EE9CA00C689D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20C43BE61F2EE9CB00C689D3 /* CapProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CapProject.xcdatamodel; sourceTree = "<group>"; };
 		20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C43BEB1F2EE9CB00C689D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20C43BED1F2EE9CB00C689D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20C43BFE1F2EF4CD00C689D3 /* loginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginNetwork.swift; path = DBNetwork/loginNetwork.swift; sourceTree = "<group>"; };
+		20C43BFE1F2EF4CD00C689D3 /* NetworkConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConstant.swift; path = DBNetwork/NetworkConstant.swift; sourceTree = "<group>"; };
 		20C43C001F2EFB6E00C689D3 /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = user.swift; path = Views/user.swift; sourceTree = "<group>"; };
 		20C43C041F2F9BCC00C689D3 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = Models/Student.swift; sourceTree = "<group>"; };
 		20C43C061F2F9C0100C689D3 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Teacher.swift; path = Models/Teacher.swift; sourceTree = "<group>"; };
 		20C43C081F2F9DC000C689D3 /* TeacherServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherServices.swift; path = Services/TeacherServices.swift; sourceTree = "<group>"; };
 		20C43C0A1F2FA28300C689D3 /* StudentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentService.swift; path = Services/StudentService.swift; sourceTree = "<group>"; };
+		20C7E7F91F3FA36600B92601 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentProfileViewController.swift; path = Controllers/StudentViewController/StudentProfileViewController.swift; sourceTree = "<group>"; };
+		20EA5FBF1F43475F0087C869 /* CourseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseServices.swift; path = Services/CourseServices.swift; sourceTree = "<group>"; };
 		20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chooseUserViewController.swift; path = Controllers/chooseUserViewController.swift; sourceTree = "<group>"; };
 		20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentLoginViewController.swift; path = Controllers/StudentLoginViewController.swift; sourceTree = "<group>"; };
 		20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = studentRegisterViewController.swift; path = Controllers/studentRegisterViewController.swift; sourceTree = "<group>"; };
@@ -109,10 +129,11 @@
 		205296C81F3A4A9100EBC8BA /* Student View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2064A3211F3CA82D00EC5C27 /* Student menu View controller */,
 				20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */,
 				20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */,
-				205296D31F3B74F000EBC8BA /* StudentHomePageTableViewController.swift */,
-				205296D51F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift */,
+				202290A31F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift */,
+				20C7E7F91F3FA36600B92601 /* StudentProfileViewController.swift */,
 			);
 			name = "Student View Controller";
 			sourceTree = "<group>";
@@ -132,6 +153,20 @@
 				20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */,
 			);
 			name = "Intro View Controllers";
+			sourceTree = "<group>";
+		};
+		2064A3211F3CA82D00EC5C27 /* Student menu View controller */ = {
+			isa = PBXGroup;
+			children = (
+				2064A3261F3CA90900EC5C27 /* StudentScheduleViewController.swift */,
+				2064A3281F3CA95300EC5C27 /* StudentProfessorViewController.swift */,
+				2064A32A1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift */,
+				2064A32C1F3CAA0E00EC5C27 /* StudentSettingViewController.swift */,
+				2064A32E1F3CAA8100EC5C27 /* StudentAssignmentViewController.swift */,
+				2064A3301F3CAB7C00EC5C27 /* StudentResourceViewController.swift */,
+				2064A35A1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift */,
+			);
+			name = "Student menu View controller";
 			sourceTree = "<group>";
 		};
 		20C43BD21F2EE9CA00C689D3 = {
@@ -164,11 +199,11 @@
 				20C43BF71F2EEC8200C689D3 /* Views */,
 				20C43BF51F2EEC5600C689D3 /* Controllers */,
 				20C43BE21F2EE9CA00C689D3 /* Main.storyboard */,
-				20C43BE01F2EE9CA00C689D3 /* ViewController.swift */,
 				20C43BE81F2EE9CB00C689D3 /* Assets.xcassets */,
 				20C43BEA1F2EE9CB00C689D3 /* LaunchScreen.storyboard */,
 				20C43BED1F2EE9CB00C689D3 /* Info.plist */,
 				20C43BE51F2EE9CB00C689D3 /* CapProject.xcdatamodeld */,
+				2064A3581F3CC03300EC5C27 /* ViewController.swift */,
 			);
 			path = CapProject;
 			sourceTree = "<group>";
@@ -215,7 +250,7 @@
 		20C43BFD1F2EF42600C689D3 /* DBNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				20C43BFE1F2EF4CD00C689D3 /* loginNetwork.swift */,
+				20C43BFE1F2EF4CD00C689D3 /* NetworkConstant.swift */,
 			);
 			name = DBNetwork;
 			sourceTree = "<group>";
@@ -226,6 +261,9 @@
 				20C43C081F2F9DC000C689D3 /* TeacherServices.swift */,
 				20C43C0A1F2FA28300C689D3 /* StudentService.swift */,
 				205752D41F3388FB00EB88B7 /* Helpers.swift */,
+				2001AD161F3D6771006DA313 /* PostService.swift */,
+				207912581F424F6300BF4C4A /* AttendanceServices.swift */,
+				20EA5FBF1F43475F0087C869 /* CourseServices.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -375,8 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				204EED601F30D81800F89A58 /* Constants.swift in Sources */,
+				2064A35B1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift in Sources */,
+				20EA5FC01F43475F0087C869 /* CourseServices.swift in Sources */,
 				209FB2591F358D670086B74B /* UserType.swift in Sources */,
-				20C43BE11F2EE9CA00C689D3 /* ViewController.swift in Sources */,
+				2001AD171F3D6771006DA313 /* PostService.swift in Sources */,
 				205296D01F3B6FE100EBC8BA /* SWRevealViewController.m in Sources */,
 				20C43C091F2F9DC000C689D3 /* TeacherServices.swift in Sources */,
 				20FE85901F34DF4A00C9FA9D /* Storyboard+Utility.swift in Sources */,
@@ -384,20 +424,28 @@
 				205296C71F3A443E00EBC8BA /* teacherLoginViewController.swift in Sources */,
 				205296C11F3A0A3800EBC8BA /* Attendance.swift in Sources */,
 				20C43C011F2EFB6E00C689D3 /* user.swift in Sources */,
+				2064A3591F3CC03300EC5C27 /* ViewController.swift in Sources */,
 				20F82D561F378BDC0011A5FD /* chooseUserViewController.swift in Sources */,
 				20C43BDF1F2EE9CA00C689D3 /* AppDelegate.swift in Sources */,
 				20C43C071F2F9C0100C689D3 /* Teacher.swift in Sources */,
+				2064A3291F3CA95300EC5C27 /* StudentProfessorViewController.swift in Sources */,
 				205752D51F3388FB00EB88B7 /* Helpers.swift in Sources */,
 				205296C31F3A14A200EBC8BA /* Classes.swift in Sources */,
+				20C7E7FA1F3FA36600B92601 /* StudentProfileViewController.swift in Sources */,
 				20F82D581F37D5C20011A5FD /* StudentLoginViewController.swift in Sources */,
+				2064A3311F3CAB7C00EC5C27 /* StudentResourceViewController.swift in Sources */,
+				2064A32F1F3CAA8100EC5C27 /* StudentAssignmentViewController.swift in Sources */,
+				2064A32D1F3CAA0E00EC5C27 /* StudentSettingViewController.swift in Sources */,
 				20F82D5A1F37DFCD0011A5FD /* studentRegisterViewController.swift in Sources */,
+				207912591F424F6300BF4C4A /* AttendanceServices.swift in Sources */,
 				205296CC1F3A583400EBC8BA /* teacherRegisterViewController.swift in Sources */,
-				205296D41F3B74F000EBC8BA /* StudentHomePageTableViewController.swift in Sources */,
-				20C43BFF1F2EF4CD00C689D3 /* loginNetwork.swift in Sources */,
+				20C43BFF1F2EF4CD00C689D3 /* NetworkConstant.swift in Sources */,
 				20C43C051F2F9BCC00C689D3 /* Student.swift in Sources */,
+				202290A41F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift in Sources */,
 				20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */,
-				205296D61F3B8FEA00EBC8BA /* StudentMenuBarViewController.swift in Sources */,
+				2064A3271F3CA90900EC5C27 /* StudentScheduleViewController.swift in Sources */,
 				20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */,
+				2064A32B1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift in Sources */,
 				205296C51F3A32B000EBC8BA /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
