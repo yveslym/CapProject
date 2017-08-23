@@ -29,19 +29,7 @@ class StudentLoginViewController: UIViewController {
     @IBOutlet weak var alertMessage: UILabel!
     
    
-    //check if email end up with edu
-    @IBAction func checkEmail(_ sender: Any) {
-        if  Helpers.checkEmailEdu(forEmail: EmailTF.text!) == true{
-            alertMessage.isHidden = false
-        }
-        else{
-            //if alertMessage.isHidden == true{
-               // alertMessage.isHidden = false
-            //}
-        }
-    }
-    
-    //Sign in student when login button tapped
+    //log in student when login button tapped
     @IBAction func loginButtonTapped(_ sender: Any) {
         
         StudentServices.SignInStudent(email: EmailTF.text, password: password.text, completion: {(student) in

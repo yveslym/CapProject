@@ -47,7 +47,7 @@ class CourseServices{
         let courseID = course.courseID
        
 
-        let AttendanceRef = NetworkConstant.course.newAttendance(withCourseKey: courseID!)// create new attendance
+        let AttendanceRef = NetworkConstant.attencace.newAttendance(withCourseKey: courseID!)// create new attendance
        
         
         if AttendanceRef?.key != nil

@@ -1,5 +1,6 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
+  - DatePickerDialog (1.1.7)
   - Firebase/Auth (4.0.4):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -53,6 +54,7 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
+  - DatePickerDialog
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -62,6 +64,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -75,6 +78,6 @@ SPEC CHECKSUMS:
   nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
   SwiftQRCode: 280589699d84195c2c573011aa52f2c015c31c34
 
-PODFILE CHECKSUM: e037b4679e7f2ab7190fd237a2e18876f1ec644e
+PODFILE CHECKSUM: 92a001358625e00da66bff4323245f6c685ab1af
 
 COCOAPODS: 1.2.1

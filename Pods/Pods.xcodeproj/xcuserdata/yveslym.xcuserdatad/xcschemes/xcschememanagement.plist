@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DatePickerDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,6 +52,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>184A1650DC0B648BD756068E60BF2C59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24B712A3498A4274AF046361F64CA66D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3380590F973AFAFA30255D504B7DEDAC</key>
 		<dict>
 			<key>primary</key>
@@ -62,17 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4499225879DB006F62EDD68A2FC88F7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA0191EFD83CFBDC3992E04E1EE42487</key>
+		<key>EAEB7EE7A4C4764EF40EDFE2CF59C5CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

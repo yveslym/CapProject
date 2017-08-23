@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vTq-TC-VG0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="-1124" y="1109.5952023988007"/>
         </scene>
-        <!--View Controller-->
+        <!--Scanner View Controller-->
         <scene sceneID="BQ7-pG-OoT">
             <objects>
-                <viewController id="21q-6B-hAd" customClass="ViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="21q-6B-hAd" customClass="QRScannerViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kd9-K5-VKm"/>
                         <viewControllerLayoutGuide type="bottom" id="bwS-RR-F7P"/>
@@ -112,7 +112,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-JU-Kka">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-JU-Kka">
                                 <rect key="frame" x="16" y="567" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -120,7 +120,15 @@
                                     <color key="titleColor" red="0.1005429998" green="0.4130701423" blue="0.60818713899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="completed:" destination="21q-6B-hAd" eventType="touchUpInside" id="5z2-7Z-N8L"/>
+                                    <action selector="completedButton:" destination="21q-6B-hAd" eventType="touchUpInside" id="m6w-s0-gNu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKQ-ir-xpe">
+                                <rect key="frame" x="16" y="217" width="343" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="done:" destination="21q-6B-hAd" eventType="touchUpInside" id="V42-2G-XJ2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,6 +137,10 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="4de-2M-bet"/>
                     </toolbarItems>
+                    <connections>
+                        <outlet property="complete" destination="c9Q-JU-Kka" id="UX8-LX-KEC"/>
+                        <segue destination="MPb-qk-dNd" kind="show" identifier="return" id="zYc-NU-LWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTn-XE-Vmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -666,6 +678,7 @@
         <image name="settings icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="zYc-NU-LWA"/>
         <segue reference="7Fn-bv-XL1"/>
     </inferredMetricsTieBreakers>
 </document>

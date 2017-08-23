@@ -15,18 +15,37 @@ class chooseUserViewController: UIViewController {
    
     @IBOutlet weak var teacherButton: UIButton!
     
+    var teacherSelected = false
+    var studentSelected = false
+    
+    
     @IBAction func studentButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "login", sender: self)
+        let login = "login"
+        performSegue(withIdentifier: login, sender: self)
     }
     
     
     @IBAction func teacherButtonTapped(_ sender: Any) {
-        let login = "teacherLogin"
-        
+        let login = "login"
+        teacherSelected = true
         self.performSegue(withIdentifier: login, sender: self)
+        
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        if let identifier = segue.identifier {
+            if identifier == "login" {
+                print("Transitioning to the Patient Detail VC")
+                let loginvc = segue.destination as! LoginViewController
+            
+                loginvc.teacherSelected = self.teacherSelected
+                loginvc.studentSelected = self.studentSelected
+                
+            }
+        }
+        
+    }
     
     
     

@@ -38,7 +38,7 @@ class studentRegisterViewController: UIViewController {
         
         let firUser = Auth.auth().currentUser!
         
-        StudentServices.createNewStudent(firUser, student: student){(cStudent)in
+        StudentServices.createNewStudent(withEmail: email.text!, password: password.text!){(cStudent)in
             guard cStudent != nil else {return}
             
         print(cStudent!)

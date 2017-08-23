@@ -11,64 +11,92 @@ import FirebaseAuth
 import FirebaseDatabase
 import Firebase
 
+
+
 class TeacherServices{
     
-    static func createTeacher(withTeacher teacher: Teacher, password: String){
+    static func createTeacher(withEmail email: String!, password: String!,completion:@escaping (Teacher?)->Void){
         
-        guard let email = teacher.email
+        guard let email = email, let password = password
             else {return}
         
-        Auth.auth().createUser(withEmail: email, password: password)
+        let teacher = Teacher(withEmail: email)
         
-        teacher.uid = Auth.auth().currentUser?.uid
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(AuthTeacher,error) in
+            
+            if let error = error {
+                
+                if let errorCode = FIRAuthErrorCode(rawValue: (error._code)){
+                    switch errorCode{
+                    case .emailAlreadyInUse: print("email use/ wait for UIAlert")
+                    case .weakPassword: print("weak password")
+                    case .invalidEmail: print("invalid email")
+                    default: assertionFailure(error.localizedDescription)
+                    }
+                    return completion(nil)
+                }
+                
+            }
+                
+            else{
+                
+                let StudentAtribute = [Constants.firstName: teacher.firstName, Constants.lastName: teacher.lastName, Constants.email: teacher.email,Constants.username:teacher.username, Constants.uid: AuthTeacher?.uid]
+                
+                NetworkConstant.teacherInfoRef.setValue(StudentAtribute)
+                Teacher.setCurrent(teacher: teacher)
+                completion(teacher)
+                
+            }
+        })//end of sign up
         
-        NetworkConstant.AddTeacherinDatabase(withTeacher: teacher)
     }//end of create new teacher
     
-    static func retrieveTeacherInfo(WithUID uid: String,completion:@escaping (String?)->Void){
+    static func retrieveTeacherInfo(WithUID uid: String,completion:@escaping (Teacher?)->Void){
         
         let stringTeacher = "teacherInfo"
         
         let ref = NetworkConstant.rootRef.child(uid).child(stringTeacher)
         
         ref.observeSingleEvent(of: .value, with:{(snapshot) in
-            guard let teacher = Teacher(snapshot: snapshot) else {
-                return completion (nil)
-            }
-            Teacher.setCurrent(teacher: teacher)
-            
-            completion(uid)
+            guard let teacher = Teacher(snapshot: snapshot)
+                else {return completion (nil)}
+            completion(teacher)
         })
     }
     
-    static func SignIn(withEmail email: String!, password: String!)-> Bool{
+    static func SignIn(withEmail email: String!, password: String!, completion: @escaping(Teacher?)->Void){
         
-        var signInsuccess = false
-        let email = String(email)
-        let password = String(password)
-        
-        if Helpers.checkEmailEdu(forEmail: email!){
-            Auth.auth().signIn(withEmail: email!, password: password!)
-            /////////////////////////////////////////////////////////////////////////////
-            // procced herror handling here with error: FIRAuthErrorCodeWrongPassword//
-            ///////////////////////////////////////////////////////////////////////////
+        Auth.auth().signIn(withEmail: email, password: password, completion: {(authTeacher,error) in
             
+            if let error = error{
+                
+                if let errorCode = FIRAuthErrorCode(rawValue: (error._code)){
+                    
+                    switch errorCode{
+                    case .invalidEmail: print("invalid email")
+                    case .userNotFound: print("not user with this email and password")
+                    default: print(error.localizedDescription)
+                    }
+                }
+            }
+                
+            else{
+                TeacherServices.retrieveTeacherInfo(WithUID: (authTeacher?.uid)!, completion: {(teacher) in
+                    if let teacher = teacher {
+                        Teacher.setCurrent(teacher: teacher, WritetoTeacherDefault: true)
+                        completion (teacher)
+                    }
+                    
+                })
+                
+            }
             
-            let ref = NetworkConstant.teacherInfoRef
-            
-            ref.observeSingleEvent(of: .value, with: {(snapshot) in
-                guard let teacher = Teacher(snapshot: snapshot)
-                    else{return}
-                Teacher.setCurrent(teacher: teacher, WritetoTeacherDefault: true)
-                signInsuccess = true
-            })
-            
-        }
-        return signInsuccess
+        })
     }
     
+    
     static func logout()->Bool{
-      
+        
         ////////////////////////////////////////
         //                                   //
         // logout logic need to be add here //
@@ -76,7 +104,7 @@ class TeacherServices{
         ////////////////////////////////////
         
         return true
-
+        
     }
     
 }

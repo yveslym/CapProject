@@ -14,8 +14,8 @@ class Student: NSObject{
     var username: String?
     var firstName: String?
     var lastName: String?
-    let email : String?
-    let password:String?
+    var email : String?
+    var password:String?
     let phoneNumber : Int?
     var uid : String?
     let type = "student"

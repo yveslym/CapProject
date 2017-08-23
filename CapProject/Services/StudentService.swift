@@ -29,12 +29,14 @@ class StudentServices{
     
     
     
-    static func createNewStudent(_ firUser: FIRUser, student: Student, completion: @escaping (Student?) -> Void) {
+    static func createNewStudent(withEmail email:String!, password: String!, completion: @escaping (Student?) -> Void) {
         
-        guard let email   = student.email, let password = student.password
+        guard let email   = email, let password = password
             else {return}
         
-        Auth.auth().createUser(withEmail: email, password: password, completion: {(students,error) in
+        let student = Student()
+
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(Authstudent,error) in
             
             if let error = error {
                 
@@ -45,16 +47,25 @@ class StudentServices{
                     case .invalidEmail: print("invalid email")
                     default: assertionFailure(error.localizedDescription)
                     }
+                    return completion(nil)
                 }
-                return completion(nil)
+                
             }
+                
             else{
-                NetworkConstant.AddStudentinDatabase(withStudent: student)
+                
+                student.email = email
+                student.password = password
+                
+                let StudentAtribute = [Constants.firstName: student.firstName, Constants.lastName: student.lastName, Constants.email: student.email,Constants.username:student.username, Constants.uid: Authstudent?.uid]
+                
+                NetworkConstant.studentInfoRef.setValue(StudentAtribute)
+                Student.setCurrent(student)
+                completion(student)
+
             }
         })//end of sign up
         
-        Student.setCurrent(student)
-        completion(student)
         
     }
     
@@ -101,9 +112,13 @@ class StudentServices{
                 
                 
             else{
-                StudentServices.RetrieveStudentInfo(ForUID: NetworkConstant.currentUserUID!, completion: {(student)in
+                StudentServices.RetrieveStudentInfo(ForUID: (authStudent?.uid)!, completion: {(student)in
                     if let student = student{
                         Student.setCurrent(student, writeToUserDefault: true)
+                        completion(student)
+                    }
+                    else{
+                        print("couldn't retrieve student from firebase")
                     }
                     
                 })
@@ -155,7 +170,7 @@ class StudentServices{
         for mycourse in student.course{
             if mycourse.courseID == courseIDScanned {
                 
-                let attandanceRef = NetworkConstant.course.attendanceRef(withCourseKey: courseIDScanned!, AttendanceKey: AttendanceScanned!)
+                let attandanceRef = NetworkConstant.attencace.attendanceRef(withCourseKey: courseIDScanned!, AttendanceKey: AttendanceScanned!)
                 let attendanceKey = attandanceRef.key as String
                 
                 if AttendanceScanned == attendanceKey{
@@ -167,29 +182,27 @@ class StudentServices{
         }
     }
     
-    // student add course 
-    static func addNewCourse (withStudent mystudent: Student,courseIDScanned : String?, AttendanceScanned : String?,
+    // student add new course using  courseIDScanned from teacher device
+    // parameter=> student (current Student), courseIDScanned, attendance Scanned
+    static func addNewCourse (withStudent student: Student,courseIDScanned : String?, AttendanceScanned : String!,
  completion: @escaping (Bool?)-> Void){
-        
-        
-        //start scanning
-        
-
-        
-//        
-//        
-        
         
         let courseref = NetworkConstant.course.courseRef.child(courseIDScanned!)
         
         courseref.observeSingleEvent(of: .value, with:{ (snapshot)in
           
             let newcourse = Course(snapshot: snapshot)!
-            mystudent.AddCourse(withCourse: newcourse)
-    print (mystudent.course[0].courseName)
             
-            //create a course initialisation with snapshot as parameter to retrieve course data
-            //
+//            let attencanceRef = NetworkConstant.attencace.attendanceRef(withCourseKey: courseIDScanned!, AttendanceKey: AttendanceScanned)
+            
+            
+            student.AddCourse(withCourse: newcourse)
+            
+            
+            
+            print (student.course[0].courseName)
+            
+
         })
 
     }

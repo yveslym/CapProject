@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-   //    configureInitialleVC(for: window)
+        configureInitialVC(for: window)
         
         // Override point for customization after application launch.
         return true
@@ -99,7 +99,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate{
     
-    func configureInitialleVC(for window: UIWindow?){
+    
+    func configureInitialVC(for window: UIWindow?){
         let defaults = UserDefaults.standard
         let initialVC : UIViewController
         
@@ -109,22 +110,35 @@ extension AppDelegate{
             
             if userType.isStudentArchived() == true{
                 Student.setCurrent(userType.student!)
+                
+                initialVC = UIStoryboard.initialViewController(for: .main)
+                
+                window?.rootViewController = initialVC
+                window?.makeKeyAndVisible()
+                
             }
             else if userType.isTeacherArchived() == true {
                 Teacher.setCurrent(teacher: userType.teacher!)
+                initialVC = UIStoryboard.initialViewController(for: .teacherMain)
+                
+                window?.rootViewController = initialVC
+                window?.makeKeyAndVisible()
+                
             }
-        
-        initialVC = UIStoryboard.initialViewController(for: .main)
-    }
-    else{
-    
+        }
+        else{
+            
             initialVC = UIStoryboard.initialViewController(for: .login)
-    }
-    window?.rootViewController = initialVC
-    window?.makeKeyAndVisible()
+            window?.rootViewController = initialVC
+            window?.makeKeyAndVisible()
+            
+        }
     }
 }
 
+
+//Next steps:
+//1. Check the initialVC -> print it out, find out if something weird is going
 
 
 
