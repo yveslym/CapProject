@@ -1,18 +1,32 @@
 //
-//  TeacherCourseListTableViewController.swift
+//  StudentHomePageTableViewController.swift
 //  CapProject
 //
-//  Created by Yves Songolo on 8/21/17.
+//  Created by Yves Songolo on 8/10/17.
 //  Copyright © 2017 Yveslym. All rights reserved.
 //
 
 import UIKit
 
-class TeacherCourseListTableViewController: UITableViewController {
+class StudentHomePageTableViewController: UITableViewController {
+    
+    @IBOutlet weak var slideButton: UIBarButtonItem!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if self.revealViewController() != nil{
+            slideButton.target = self.revealViewController()
+            slideButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 290
+            
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

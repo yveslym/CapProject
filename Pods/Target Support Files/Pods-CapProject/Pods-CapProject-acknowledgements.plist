@@ -49,6 +49,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+<<<<<<< HEAD
 			<string>Copyright (c) 2014 Vinícius (Squimer)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -79,6 +80,8 @@ THE SOFTWARE.</string>
 			<key>FooterText</key>
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 			<string>Copyright 2017 Google</string>
 			<key>License</key>
 			<string>Copyright</string>

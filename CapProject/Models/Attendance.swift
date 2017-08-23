@@ -34,11 +34,9 @@ class Attendance: NSObject{
         guard let dict = snapshot.value as? [String: Any]
             
             else{return nil}
-        let attendance = dict[Constants.attendance] as? Attendance
+        let attendance = dict["key"] as? Attendance
         
         self.AttendanceID = (attendance?.AttendanceID)!
-        
-        // add the time condition, if student scan in certain time he will be mark present or late
         self.present = true
     }
 =======

@@ -44,10 +44,14 @@ class studentRegisterViewController: UIViewController {
         let firUser = Auth.auth().currentUser!
 <<<<<<< HEAD
         
+<<<<<<< HEAD
         StudentServices.createNewStudent(withEmail: email.text!, password: password.text!){(cStudent)in
 =======
         StudentServices.createNewStudent(firUser, student: student, password: password.text!){(cStudent)in
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+        StudentServices.createNewStudent(firUser, student: student){(cStudent)in
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
             guard cStudent != nil else {return}
        
             Student.setCurrent(cStudent!)

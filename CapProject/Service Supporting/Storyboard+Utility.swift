@@ -13,8 +13,6 @@ extension UIStoryboard {
     enum CapType: String {
         case main
         case login
-        case teacherMain
-        
         
         var filename: String {
             return rawValue.capitalized

@@ -15,13 +15,13 @@ import Firebase
 
 class AttendanceServices: NSObject{
   
-//    static func create(completion:@escaping (String?)->Void){
-//        
-//        let newAttendance = NetworkConstant.attencace.attendanceRef.childByAutoId()
-//        
-//        let key = newAttendance.key
-//        
-//        completion(key)
+    static func create(completion:@escaping (String?)->Void){
+        
+        let newAttendance = NetworkConstant.attencace.attendanceRef.childByAutoId()
+        
+        let key = newAttendance.key
+        
+        completion(key)
     }
 
     
@@ -33,4 +33,4 @@ class AttendanceServices: NSObject{
     
     
     
-
+}

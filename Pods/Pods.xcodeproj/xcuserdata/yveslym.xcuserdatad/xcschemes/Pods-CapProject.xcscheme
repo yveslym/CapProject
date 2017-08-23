@@ -15,10 +15,14 @@
             <BuildableReference
                BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
                BlueprintIdentifier = "24B712A3498A4274AF046361F64CA66D"
 =======
                BlueprintIdentifier = "BE6D469DB6F06077D046B1EFEF87B767"
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+               BlueprintIdentifier = "E4499225879DB006F62EDD68A2FC88F7"
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                BuildableName = "Pods_CapProject.framework"
                BlueprintName = "Pods-CapProject"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -50,10 +54,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
             BlueprintIdentifier = "24B712A3498A4274AF046361F64CA66D"
 =======
             BlueprintIdentifier = "BE6D469DB6F06077D046B1EFEF87B767"
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+            BlueprintIdentifier = "E4499225879DB006F62EDD68A2FC88F7"
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
             BuildableName = "Pods_CapProject.framework"
             BlueprintName = "Pods-CapProject"
             ReferencedContainer = "container:Pods.xcodeproj">

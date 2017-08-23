@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2030741B1F36DA4400127897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2030741A1F36DA4400127897 /* GoogleService-Info.plist */; };
-		20397CB01F4C8E350073F150 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20397CAF1F4C8E350073F150 /* LoginViewController.swift */; };
-		20397CB21F4CA0CA0073F150 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20397CB11F4CA0CA0073F150 /* RegisterViewController.swift */; };
-		20397CB41F4CB8730073F150 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20397CB31F4CB8730073F150 /* ProfileViewController.swift */; };
 		204EED601F30D81800F89A58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EED5F1F30D81800F89A58 /* Constants.swift */; };
 		205296BF1F3A00A300EBC8BA /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296BE1F3A00A000EBC8BA /* Course.swift */; };
 		205296C11F3A0A3800EBC8BA /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205296C01F3A0A3700EBC8BA /* Attendance.swift */; };
@@ -31,7 +28,6 @@
 		2064A3311F3CAB7C00EC5C27 /* StudentResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3301F3CAB7C00EC5C27 /* StudentResourceViewController.swift */; };
 		2064A3591F3CC03300EC5C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A3581F3CC03300EC5C27 /* ViewController.swift */; };
 		2064A35B1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064A35A1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift */; };
-		2070800E1F4D0A1C006AF326 /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070800D1F4D0A1C006AF326 /* TeacherProfileViewController.swift */; };
 		207912591F424F6300BF4C4A /* AttendanceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207912581F424F6300BF4C4A /* AttendanceServices.swift */; };
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
@@ -50,20 +46,12 @@
 		20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C43C0A1F2FA28300C689D3 /* StudentService.swift */; };
 <<<<<<< HEAD
 		20C7E7FA1F3FA36600B92601 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7E7F91F3FA36600B92601 /* StudentProfileViewController.swift */; };
-		20DE92F21F47F1A900BB0EC4 /* TeacherMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20DE92F11F47F1A900BB0EC4 /* TeacherMain.storyboard */; };
-		20DE92F51F4B47F300BB0EC4 /* SideBarMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92F41F4B47F300BB0EC4 /* SideBarMenuTableViewController.swift */; };
-		20DE92F71F4B4C0D00BB0EC4 /* TeacherCourseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92F61F4B4C0D00BB0EC4 /* TeacherCourseListTableViewController.swift */; };
-		20DE92F91F4B549700BB0EC4 /* teacherListOfClassMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92F81F4B549700BB0EC4 /* teacherListOfClassMenu.swift */; };
-		20DE92FB1F4B5A4F00BB0EC4 /* TeacherAddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92FA1F4B5A4F00BB0EC4 /* TeacherAddStudentViewController.swift */; };
-		20DE92FD1F4B5B7900BB0EC4 /* TeacherAddCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92FC1F4B5B7900BB0EC4 /* TeacherAddCourseTableViewController.swift */; };
-		20DE92FF1F4B71E500BB0EC4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE92FE1F4B71E500BB0EC4 /* Schedule.swift */; };
 		20EA5FC01F43475F0087C869 /* CourseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA5FBF1F43475F0087C869 /* CourseServices.swift */; };
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
 		20F82D561F378BDC0011A5FD /* chooseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */; };
 		20F82D581F37D5C20011A5FD /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */; };
 		20F82D5A1F37DFCD0011A5FD /* studentRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */; };
-		20F9E1551F461A0D00A9FE4B /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F9E1541F461A0D00A9FE4B /* QRScannerViewController.swift */; };
 		20FE85901F34DF4A00C9FA9D /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FE858F1F34DF4A00C9FA9D /* Storyboard+Utility.swift */; };
 		20FE85921F34E8B000C9FA9D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FE85911F34E8B000C9FA9D /* Login.storyboard */; };
 		A13C5FC199FD940C44B2B104 /* Pods_CapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D3C796D3874828CF6A042A /* Pods_CapProject.framework */; };
@@ -72,9 +60,6 @@
 /* Begin PBXFileReference section */
 		01F78F2F7E2DA41DC0866B15 /* Pods-CapProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CapProject/Pods-CapProject.debug.xcconfig"; sourceTree = "<group>"; };
 		2030741A1F36DA4400127897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Service Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		20397CAF1F4C8E350073F150 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/IntroductionViewController/LoginViewController.swift; sourceTree = "<group>"; };
-		20397CB11F4CA0CA0073F150 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Controllers/IntroductionViewController/RegisterViewController.swift; sourceTree = "<group>"; };
-		20397CB31F4CB8730073F150 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/IntroductionViewController/ProfileViewController.swift; sourceTree = "<group>"; };
 		204EED5F1F30D81800F89A58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Service Supporting/Constants.swift"; sourceTree = "<group>"; };
 		205296BE1F3A00A000EBC8BA /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Course.swift; path = Models/Course.swift; sourceTree = "<group>"; };
 		205296C01F3A0A3700EBC8BA /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attendance.swift; path = Models/Attendance.swift; sourceTree = "<group>"; };
@@ -97,7 +82,6 @@
 		2064A3301F3CAB7C00EC5C27 /* StudentResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentResourceViewController.swift; path = "Controllers/StudentViewController/student Menu Controller/StudentResourceViewController.swift"; sourceTree = "<group>"; };
 		2064A3581F3CC03300EC5C27 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2064A35A1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentHomePageTableViewController.swift; path = Controllers/StudentViewController/StudentHomePageTableViewController.swift; sourceTree = "<group>"; };
-		2070800D1F4D0A1C006AF326 /* TeacherProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherProfileViewController.swift; path = "Controllers/Teacher View Controller/TeacherProfileViewController.swift"; sourceTree = "<group>"; };
 		207912581F424F6300BF4C4A /* AttendanceServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttendanceServices.swift; path = Services/AttendanceServices.swift; sourceTree = "<group>"; };
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
@@ -118,20 +102,12 @@
 		20C43C0A1F2FA28300C689D3 /* StudentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentService.swift; path = Services/StudentService.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
 		20C7E7F91F3FA36600B92601 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentProfileViewController.swift; path = Controllers/StudentViewController/StudentProfileViewController.swift; sourceTree = "<group>"; };
-		20DE92F11F47F1A900BB0EC4 /* TeacherMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TeacherMain.storyboard; path = Storyboards/TeacherMain.storyboard; sourceTree = "<group>"; };
-		20DE92F41F4B47F300BB0EC4 /* SideBarMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideBarMenuTableViewController.swift; path = "Controllers/Teacher View Controller/Menu Table View Controller/SideBarMenuTableViewController.swift"; sourceTree = "<group>"; };
-		20DE92F61F4B4C0D00BB0EC4 /* TeacherCourseListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherCourseListTableViewController.swift; path = "Controllers/Teacher View Controller/Menu Table View Controller/TeacherCourseListTableViewController.swift"; sourceTree = "<group>"; };
-		20DE92F81F4B549700BB0EC4 /* teacherListOfClassMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = teacherListOfClassMenu.swift; path = "Controllers/Teacher View Controller/Menu Table View Controller/teacherListOfClassMenu.swift"; sourceTree = "<group>"; };
-		20DE92FA1F4B5A4F00BB0EC4 /* TeacherAddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherAddStudentViewController.swift; path = "Controllers/Teacher View Controller/Menu Table View Controller/TeacherAddStudentViewController.swift"; sourceTree = "<group>"; };
-		20DE92FC1F4B5B7900BB0EC4 /* TeacherAddCourseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeacherAddCourseTableViewController.swift; path = "Controllers/Teacher View Controller/Menu Table View Controller/TeacherAddCourseTableViewController.swift"; sourceTree = "<group>"; };
-		20DE92FE1F4B71E500BB0EC4 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Models/Schedule.swift; sourceTree = "<group>"; };
 		20EA5FBF1F43475F0087C869 /* CourseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseServices.swift; path = Services/CourseServices.swift; sourceTree = "<group>"; };
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
 		20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chooseUserViewController.swift; path = Controllers/chooseUserViewController.swift; sourceTree = "<group>"; };
 		20F82D571F37D5C20011A5FD /* StudentLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentLoginViewController.swift; path = Controllers/StudentLoginViewController.swift; sourceTree = "<group>"; };
 		20F82D591F37DFCD0011A5FD /* studentRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = studentRegisterViewController.swift; path = Controllers/studentRegisterViewController.swift; sourceTree = "<group>"; };
-		20F9E1541F461A0D00A9FE4B /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRScannerViewController.swift; path = Controllers/QRScannerViewController.swift; sourceTree = "<group>"; };
 		20FE858F1F34DF4A00C9FA9D /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Service Supporting/Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		20FE85911F34E8B000C9FA9D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		25EEB518E361AE18DF3C2DA9 /* Pods-CapProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CapProject/Pods-CapProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,10 +154,8 @@
 		205296C91F3A4AB300EBC8BA /* Teacher View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				20DE92F31F4B471200BB0EC4 /* Menu View Controller */,
 				205296C61F3A443D00EBC8BA /* teacherLoginViewController.swift */,
 				205296CB1F3A583400EBC8BA /* teacherRegisterViewController.swift */,
-				2070800D1F4D0A1C006AF326 /* TeacherProfileViewController.swift */,
 			);
 			name = "Teacher View Controller";
 			sourceTree = "<group>";
@@ -190,9 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				20F82D551F378BDC0011A5FD /* chooseUserViewController.swift */,
-				20397CAF1F4C8E350073F150 /* LoginViewController.swift */,
-				20397CB11F4CA0CA0073F150 /* RegisterViewController.swift */,
-				20397CB31F4CB8730073F150 /* ProfileViewController.swift */,
 			);
 			name = "Intro View Controllers";
 			sourceTree = "<group>";
@@ -242,7 +213,6 @@
 				205296C81F3A4A9100EBC8BA /* Student View Controller */,
 				205296C91F3A4AB300EBC8BA /* Teacher View Controller */,
 				205296CA1F3A4B6B00EBC8BA /* Intro View Controllers */,
-				20F9E1541F461A0D00A9FE4B /* QRScannerViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -256,7 +226,6 @@
 				205296C01F3A0A3700EBC8BA /* Attendance.swift */,
 				205296C21F3A14A200EBC8BA /* Classes.swift */,
 				205296C41F3A32B000EBC8BA /* Post.swift */,
-				20DE92FE1F4B71E500BB0EC4 /* Schedule.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -273,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				20FE85911F34E8B000C9FA9D /* Login.storyboard */,
-				20DE92F11F47F1A900BB0EC4 /* TeacherMain.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -294,18 +262,6 @@
 				205752D41F3388FB00EB88B7 /* Helpers.swift */,
 			);
 			name = Services;
-			sourceTree = "<group>";
-		};
-		20DE92F31F4B471200BB0EC4 /* Menu View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				20DE92F41F4B47F300BB0EC4 /* SideBarMenuTableViewController.swift */,
-				20DE92F61F4B4C0D00BB0EC4 /* TeacherCourseListTableViewController.swift */,
-				20DE92F81F4B549700BB0EC4 /* teacherListOfClassMenu.swift */,
-				20DE92FA1F4B5A4F00BB0EC4 /* TeacherAddStudentViewController.swift */,
-				20DE92FC1F4B5B7900BB0EC4 /* TeacherAddCourseTableViewController.swift */,
-			);
-			name = "Menu View Controller";
 			sourceTree = "<group>";
 		};
 		3272E2D1A5ABA4068684C2B2 /* Pods */ = {
@@ -389,7 +345,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DE92F21F47F1A900BB0EC4 /* TeacherMain.storyboard in Resources */,
 				20C43BEC1F2EE9CB00C689D3 /* LaunchScreen.storyboard in Resources */,
 				20C43BE91F2EE9CB00C689D3 /* Assets.xcassets in Resources */,
 				2030741B1F36DA4400127897 /* GoogleService-Info.plist in Resources */,
@@ -457,11 +412,7 @@
 <<<<<<< HEAD
 				2064A35B1F3CD52C00EC5C27 /* StudentHomePageTableViewController.swift in Sources */,
 				20EA5FC01F43475F0087C869 /* CourseServices.swift in Sources */,
-				20DE92FB1F4B5A4F00BB0EC4 /* TeacherAddStudentViewController.swift in Sources */,
 				209FB2591F358D670086B74B /* UserType.swift in Sources */,
-				2070800E1F4D0A1C006AF326 /* TeacherProfileViewController.swift in Sources */,
-				20DE92F51F4B47F300BB0EC4 /* SideBarMenuTableViewController.swift in Sources */,
-				20DE92F71F4B4C0D00BB0EC4 /* TeacherCourseListTableViewController.swift in Sources */,
 				2001AD171F3D6771006DA313 /* PostService.swift in Sources */,
 =======
 				209FB2591F358D670086B74B /* UserType.swift in Sources */,
@@ -471,7 +422,6 @@
 				20C43C091F2F9DC000C689D3 /* TeacherServices.swift in Sources */,
 				20FE85901F34DF4A00C9FA9D /* Storyboard+Utility.swift in Sources */,
 				205296BF1F3A00A300EBC8BA /* Course.swift in Sources */,
-				20DE92FF1F4B71E500BB0EC4 /* Schedule.swift in Sources */,
 				205296C71F3A443E00EBC8BA /* teacherLoginViewController.swift in Sources */,
 				205296C11F3A0A3800EBC8BA /* Attendance.swift in Sources */,
 				20C43C011F2EFB6E00C689D3 /* user.swift in Sources */,
@@ -481,7 +431,10 @@
 				205752D51F3388FB00EB88B7 /* Helpers.swift in Sources */,
 				205296C31F3A14A200EBC8BA /* Classes.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				20397CB21F4CA0CA0073F150 /* RegisterViewController.swift in Sources */,
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 				20C7E7FA1F3FA36600B92601 /* StudentProfileViewController.swift in Sources */,
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
@@ -492,15 +445,15 @@
 				20C43BFF1F2EF4CD00C689D3 /* loginNetwork.swift in Sources */,
 				20C43C051F2F9BCC00C689D3 /* Student.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				20DE92F91F4B549700BB0EC4 /* teacherListOfClassMenu.swift in Sources */,
 				20397CB01F4C8E350073F150 /* LoginViewController.swift in Sources */,
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 				202290A41F3C20D1001FC4BC /* StudentSideBarMenuTableViewController.swift in Sources */,
 				20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */,
 				2064A3271F3CA90900EC5C27 /* StudentScheduleViewController.swift in Sources */,
-				20F9E1551F461A0D00A9FE4B /* QRScannerViewController.swift in Sources */,
-				20DE92FD1F4B5B7900BB0EC4 /* TeacherAddCourseTableViewController.swift in Sources */,
 				20C43C0B1F2FA28300C689D3 /* StudentService.swift in Sources */,
-				20397CB41F4CB8730073F150 /* ProfileViewController.swift in Sources */,
 				2064A32B1F3CA9B600EC5C27 /* StudentAttendanceViewContoller.swift in Sources */,
 =======
 				20C43BE71F2EE9CB00C689D3 /* CapProject.xcdatamodeld in Sources */,

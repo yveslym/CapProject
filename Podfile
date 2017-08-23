@@ -14,11 +14,14 @@ target 'CapProject' do
 source 'https://github.com/CocoaPods/Specs.git'
 pod 'SwiftQRCode'
 
-
 use_frameworks!
 
 pod 'ActionSheetPicker-3.0'
+<<<<<<< HEAD
 pod 'DatePickerDialog'
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+pod "EFQRCode", '~> 1.2.7'
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 end

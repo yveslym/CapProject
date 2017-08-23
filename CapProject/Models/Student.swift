@@ -15,6 +15,7 @@ class Student: NSObject{
     var username: String?
     var firstName: String?
     var lastName: String?
+<<<<<<< HEAD
     var email : String?
     var password:String?
 =======
@@ -24,6 +25,10 @@ class Student: NSObject{
     let email : String?
     let password:String?
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+    let email : String?
+    let password:String?
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
     let phoneNumber : Int?
     var uid : String?
     let type = "student"

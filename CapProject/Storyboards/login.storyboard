@@ -11,6 +11,7 @@
     </dependencies>
     <scenes>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <!--Register View Controller-->
         <scene sceneID="oGC-07-6FB">
             <objects>
@@ -21,6 +22,12 @@
             <objects>
                 <viewController id="CPg-DR-KdB" customClass="studentRegisterViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+        <!--Student Register View Controller-->
+        <scene sceneID="oGC-07-6FB">
+            <objects>
+                <viewController id="JsN-Fa-Zub" customClass="studentRegisterViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LHt-47-FgL"/>
                         <viewControllerLayoutGuide type="bottom" id="dSL-yU-3gw"/>
@@ -33,21 +40,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-aF-sdF">
                                 <rect key="frame" x="57" y="97" width="261" height="516.5"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-aF-sdF">
+                                <rect key="frame" x="60" y="58" width="261" height="576.5"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cap logo" translatesAutoresizingMaskIntoConstraints="NO" id="9oz-d6-bpb">
                                         <rect key="frame" x="0.0" y="0.0" width="261" height="157"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIz-Bf-Noq">
-                                        <rect key="frame" x="0.0" y="188" width="261" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="200" width="261" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-pE-AOq">
-                                        <rect key="frame" x="0.0" y="239.5" width="261" height="44"/>
+                                        <rect key="frame" x="0.0" y="263.5" width="261" height="44"/>
                                         <constraints>
+<<<<<<< HEAD
                                             <constraint firstAttribute="height" constant="44" id="cfb-pk-vXQ"/>
 =======
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-3l-k5j" userLabel="register stack view">
@@ -76,6 +89,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BTe-lb-Zar"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+                                            <constraint firstAttribute="height" constant="44" id="YP4-e3-DQ8"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -83,8 +99,9 @@
                                     </textField>
 <<<<<<< HEAD
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="pmS-xK-ljm">
-                                        <rect key="frame" x="0.0" y="314.5" width="261" height="44"/>
+                                        <rect key="frame" x="0.0" y="350.5" width="261" height="44"/>
                                         <constraints>
+<<<<<<< HEAD
                                             <constraint firstAttribute="height" constant="44" id="gsB-ue-Ddk"/>
 =======
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="qXG-DD-0HI">
@@ -101,6 +118,9 @@
                                         <rect key="frame" x="0.0" y="188" width="260" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ufu-Cq-m29"/>
+=======
+                                            <constraint firstAttribute="height" constant="44" id="ro6-1F-D1M"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -108,8 +128,9 @@
                                     </textField>
 <<<<<<< HEAD
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="N52-S8-o2V">
-                                        <rect key="frame" x="0.0" y="389.5" width="261" height="44"/>
+                                        <rect key="frame" x="0.0" y="437.5" width="261" height="44"/>
                                         <constraints>
+<<<<<<< HEAD
                                             <constraint firstAttribute="height" constant="44" id="gXL-Lf-uXZ"/>
 =======
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="59v-Fc-sLO">
@@ -117,6 +138,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="gJG-T8-2fm"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+                                            <constraint firstAttribute="height" constant="44" id="Nlx-U1-O2K"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -124,7 +148,7 @@
                                     </textField>
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-lM-gTP">
-                                        <rect key="frame" x="0.0" y="464.5" width="261" height="52"/>
+                                        <rect key="frame" x="0.0" y="524.5" width="261" height="52"/>
                                         <state key="normal" image="Signup Button"/>
 =======
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j5-SP-O6t">
@@ -140,6 +164,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <constraint firstAttribute="trailing" secondItem="HgG-YL-vug" secondAttribute="trailing" id="24X-BA-Fya"/>
                             <constraint firstItem="HgG-YL-vug" firstAttribute="leading" secondItem="TkG-FW-o4L" secondAttribute="leading" id="8Cn-dN-nDM"/>
@@ -160,14 +185,20 @@
                             <constraint firstItem="4uf-ce-beB" firstAttribute="top" secondItem="lj1-eB-c0N" secondAttribute="top" id="tKI-tU-gKd"/>
                             <constraint firstItem="4uf-ce-beB" firstAttribute="leading" secondItem="lj1-eB-c0N" secondAttribute="leading" id="vKb-v9-kp8"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+                            <constraint firstItem="HgG-YL-vug" firstAttribute="top" secondItem="TkG-FW-o4L" secondAttribute="top" id="Spr-Wf-P6I"/>
+                            <constraint firstItem="TmN-aF-sdF" firstAttribute="top" secondItem="gtI-NF-ViU" secondAttribute="bottom" constant="38" id="U3s-xK-69u"/>
+                            <constraint firstItem="HgG-YL-vug" firstAttribute="leading" secondItem="TkG-FW-o4L" secondAttribute="leading" id="fS4-NW-vsF"/>
+                            <constraint firstAttribute="trailing" secondItem="HgG-YL-vug" secondAttribute="trailing" id="jQg-mT-o6f"/>
+                            <constraint firstItem="HgG-YL-vug" firstAttribute="bottom" secondItem="2py-2E-NiZ" secondAttribute="top" id="oNc-w4-yJx"/>
+                            <constraint firstItem="TmN-aF-sdF" firstAttribute="leading" secondItem="TkG-FW-o4L" secondAttribute="leadingMargin" constant="44" id="yxW-3k-1cl"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fby-pI-nKb">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3jb-6x-mHD"/>
-                    </navigationItem>
                     <connections>
 <<<<<<< HEAD
                         <outlet property="confPassword" destination="N52-S8-o2V" id="zsZ-oX-kp9"/>
+<<<<<<< HEAD
                         <outlet property="confirmPassword" destination="N52-S8-o2V" id="7q1-L4-AnK"/>
                         <outlet property="email" destination="bnp-pE-AOq" id="Gy7-Em-Ksz"/>
                         <outlet property="password" destination="pmS-xK-ljm" id="Wq8-NZ-Kyp"/>
@@ -180,15 +211,24 @@
                         <outlet property="password" destination="QuS-iM-r1f" id="hOu-ld-XQN"/>
                         <outlet property="username" destination="wzu-Vq-m51" id="xFH-8g-337"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+                        <outlet property="email" destination="bnp-pE-AOq" id="HXB-SS-VJU"/>
+                        <outlet property="password" destination="pmS-xK-ljm" id="YcN-9E-L0Q"/>
+                        <segue destination="x1E-Fa-XC9" kind="show" identifier="profile" id="Kuf-0U-6Uv"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2k-Fd-KdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="1047.2" y="-914.392803598201"/>
 =======
             <point key="canvasLocation" x="-658" y="-914"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+            <point key="canvasLocation" x="-831" y="-914"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
         </scene>
         <!--Choose User View Controller-->
         <scene sceneID="jgM-g7-7zG">
@@ -208,25 +248,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cap logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z12-by-fdg">
-                                <rect key="frame" x="127" y="80" width="153" height="103"/>
+                                <rect key="frame" x="57" y="20" width="261" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-cU-nvI">
-                                <rect key="frame" x="68" y="258" width="239" height="37"/>
+                                <rect key="frame" x="68" y="310" width="239" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="Wdh-x3-q91">
-                                <rect key="frame" x="68" y="208" width="239" height="37"/>
+                                <rect key="frame" x="68" y="250" width="239" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKl-gV-uk9">
-                                <rect key="frame" x="68" y="377" width="239" height="44"/>
+                                <rect key="frame" x="68" y="368" width="239" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="education level icon"/>
 =======
@@ -264,12 +304,13 @@
                             </button>
 <<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z2-u1-W6k">
-                                <rect key="frame" x="89" y="389" width="177" height="21"/>
+                                <rect key="frame" x="84" y="380" width="186" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.25809094309806824" green="0.49630832672119141" blue="0.61511188745498657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="Klu-6t-W5Z">
                                 <rect key="frame" x="68" y="315" width="239" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -279,6 +320,8 @@
                             </textField>
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -301,25 +344,32 @@
                         <outlet property="educationLevelLabel" destination="3Z2-u1-W6k" id="0cD-U2-sbG"/>
                         <outlet property="firstName" destination="Wdh-x3-q91" id="FyD-kF-YVG"/>
                         <outlet property="lastName" destination="8Ld-cU-nvI" id="jfT-Ou-nkD"/>
+<<<<<<< HEAD
                         <outlet property="username" destination="Klu-6t-W5Z" id="WNT-Cy-kuk"/>
 =======
                         <outlet property="StudentButton" destination="m3W-XY-PIr" id="OYg-E8-za9"/>
                         <outlet property="teacherButton" destination="9Al-LG-C0b" id="Rfd-BS-ThH"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWp-cD-mIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="2005.5999999999999" y="-1328.1859070464768"/>
 =======
             <point key="canvasLocation" x="-1362.4000000000001" y="-161.46926536731635"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+            <point key="canvasLocation" x="-12" y="-914.392803598201"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
         </scene>
-        <!--Login View Controller-->
+        <!--Student Login View Controller-->
         <scene sceneID="Bsh-wg-pN3">
             <objects>
-                <viewController id="5ef-0L-xfG" customClass="LoginViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5ef-0L-xfG" customClass="StudentLoginViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="txj-DN-zTS"/>
                         <viewControllerLayoutGuide type="bottom" id="UI3-HK-7LQ"/>
@@ -338,6 +388,9 @@
                                 <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkEmail:" destination="5ef-0L-xfG" eventType="editingDidEnd" id="ue3-g7-m0S"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="Gpc-aW-KBe">
                                 <rect key="frame" x="67" y="388" width="240" height="43"/>
@@ -351,7 +404,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="loginbutton"/>
                                 <connections>
-                                    <action selector="loginButtonTapped:" destination="5ef-0L-xfG" eventType="touchUpInside" id="dxo-Hc-SWV"/>
+                                    <action selector="loginButtonTapped:" destination="5ef-0L-xfG" eventType="touchUpInside" id="bUa-1a-ToG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLn-lA-Jdw">
@@ -375,7 +428,8 @@
                                     <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonTapped:" destination="5ef-0L-xfG" eventType="touchUpInside" id="zIn-4P-G5P"/>
+                                    <action selector="registerBT:" destination="5ef-0L-xfG" eventType="touchUpInside" id="toQ-TV-uyt"/>
+                                    <segue destination="JsN-Fa-Zub" kind="show" identifier="register" id="grB-7s-8n3"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cap logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZRo-G0-TiZ">
@@ -485,10 +539,8 @@
                             <constraint firstItem="uFU-rm-eSv" firstAttribute="top" secondItem="txj-DN-zTS" secondAttribute="bottom" constant="299" id="TyO-6l-rX3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NKr-x9-a2d">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="p5z-pm-Qc9"/>
-                    </navigationItem>
                     <connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <outlet property="email" destination="pLI-pS-wbk" id="GPf-rD-RuD"/>
                         <outlet property="password" destination="Gpc-aW-KBe" id="iKM-sa-b4M"/>
@@ -499,15 +551,24 @@
                         <outlet property="password" destination="Gpc-aW-KBe" id="g51-E8-cIE"/>
                         <outlet property="registerButtonT" destination="ZNW-eU-SDL" id="JxJ-oH-Ejs"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+                        <outlet property="EmailTF" destination="pLI-pS-wbk" id="6bD-XP-6SA"/>
+                        <outlet property="loginButton" destination="3fy-2e-Ve6" id="R7l-sM-wZj"/>
+                        <outlet property="password" destination="Gpc-aW-KBe" id="g51-E8-cIE"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRS-NJ-9rA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="-815.20000000000005" y="-914.392803598201"/>
 =======
             <point key="canvasLocation" x="-1404" y="-915"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+            <point key="canvasLocation" x="-1754.4000000000001" y="-914.392803598201"/>
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
         </scene>
         <!--Choose User View Controller-->
         <scene sceneID="Msw-O0-EP6">
@@ -571,6 +632,7 @@
                             <constraint firstItem="g0Q-3K-QCr" firstAttribute="leading" secondItem="aRX-yh-B7a" secondAttribute="trailing" constant="41" id="zGU-4b-usx"/>
                         </constraints>
                     </view>
+<<<<<<< HEAD
                     <connections>
 <<<<<<< HEAD
                         <segue destination="4tl-OS-GH8" kind="show" identifier="login" id="0MC-3A-QY3"/>
@@ -579,6 +641,8 @@
                         <outlet property="teacherButton" destination="aRX-yh-B7a" id="W19-UW-wqu"/>
 >>>>>>> parent of 955b75c... about to split qr code with vc
                     </connections>
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70H-2V-uH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -819,104 +883,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfU-MI-NZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-625" y="703"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bbf-Hv-Q43">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tl-OS-GH8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ja9-2M-9ba">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5ef-0L-xfG" kind="relationship" relationship="rootViewController" id="Tg9-nR-q45"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ekn-wB-F1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1754.4000000000001" y="-914.392803598201"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="VBF-b9-txa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WLp-oL-CWt" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ISF-dM-2C3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JsN-Fa-Zub" kind="relationship" relationship="rootViewController" id="r5F-xZ-tDO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jJU-Zg-ozO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="108" y="-914.392803598201"/>
-        </scene>
-        <!--Teacher Profile View Controller-->
-        <scene sceneID="o9V-1D-XY7">
-            <objects>
-                <viewController id="ViU-G2-Ag1" customClass="TeacherProfileViewController" customModule="CapProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4GJ-ML-Tpn"/>
-                        <viewControllerLayoutGuide type="bottom" id="1hQ-F3-px7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w7J-et-SVG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-Zp-K9g">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cap logo" translatesAutoresizingMaskIntoConstraints="NO" id="JQF-Ta-FHb">
-                                <rect key="frame" x="127" y="80" width="153" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ev7-eM-FI4">
-                                <rect key="frame" x="68" y="292" width="239" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="aBt-2m-Wcf">
-                                <rect key="frame" x="68" y="228" width="239" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTg-72-S9x">
-                                <rect key="frame" x="68" y="521" width="239" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Signup Button"/>
-                                <connections>
-                                    <action selector="continueButtonTapped:" destination="ViU-G2-Ag1" eventType="touchUpInside" id="udF-eU-tpV"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="userName" textAlignment="center" minimumFontSize="17" background="textfield icon" translatesAutoresizingMaskIntoConstraints="NO" id="TO7-99-DNF">
-                                <rect key="frame" x="68" y="354" width="239" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="firstName" destination="aBt-2m-Wcf" id="qEl-zf-NgP"/>
-                        <outlet property="lastName" destination="Ev7-eM-FI4" id="AHb-f4-bNy"/>
-                        <outlet property="userName" destination="TO7-99-DNF" id="8YZ-gf-5zN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YHA-P5-hyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="-551"/>
         </scene>
     </scenes>
     <resources>

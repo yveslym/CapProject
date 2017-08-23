@@ -10,7 +10,10 @@ import UIKit
 
 class teacherLoginViewController: UIViewController {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 
     
     
@@ -20,6 +23,13 @@ class teacherLoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+<<<<<<< HEAD
+=======
+    
+    @IBOutlet weak var registerButton: UIButton!
+    
+    
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
     @IBAction func registerButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "teacherRegister", sender: self)
         
@@ -43,22 +53,32 @@ class teacherLoginViewController: UIViewController {
     
     
     
+<<<<<<< HEAD
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
     
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

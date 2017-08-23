@@ -16,6 +16,7 @@ class chooseUserViewController: UIViewController {
     @IBOutlet weak var teacherButton: UIButton!
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     var teacherSelected = false
     var studentSelected = false
     
@@ -24,6 +25,11 @@ class chooseUserViewController: UIViewController {
         let login = "login"
         performSegue(withIdentifier: login, sender: self)
 =======
+=======
+    @IBAction func studentButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "login", sender: self)
+    }
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
     
     @IBAction func studentButtonTapped(_ sender: Any) {
         
@@ -35,28 +41,20 @@ class chooseUserViewController: UIViewController {
     
     @IBAction func teacherButtonTapped(_ sender: Any) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         let login = "login"
         teacherSelected = true
         self.performSegue(withIdentifier: login, sender: self)
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+        let login = "teacherLogin"
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
         
+        self.performSegue(withIdentifier: login, sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-        if let identifier = segue.identifier {
-            if identifier == "login" {
-                print("Transitioning to the Patient Detail VC")
-                let loginvc = segue.destination as! LoginViewController
-            
-                loginvc.teacherSelected = self.teacherSelected
-                loginvc.studentSelected = self.studentSelected
-                
-            }
-        }
-        
-    }
+    
     
     
     override func viewDidLoad() {

@@ -20,6 +20,7 @@ class Course: NSObject{
     var listOfAttendance = [String]()
     var todayAttendance : String?
     var attendance = [Attendance]()
+<<<<<<< HEAD
     var schedule : Schedule?
     var courseAdress : String?
 =======
@@ -29,6 +30,9 @@ class Course: NSObject{
     private var teacher: Teacher?
     private var student = [Student]()
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+    
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
     // add course start time and end time
     
     override init (){
@@ -75,11 +79,40 @@ class Course: NSObject{
     return studentFind
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> parent of 955b75c... about to split qr code with vc
 }
+=======
+    
+    // function to generate new attendance
+    func newAttendancekey()->String{
+        
+        
+        let key = " yves"
+//            var newAttendance = NetworkConstant.course.courseRef.child(self.courseID!).child(Constants.attendance).childByAutoId()
+//            key = newAttendance.key
+//        
+//        if key != nil{
+//        
+//            self.listOfAttendance.append(key!)
+//            todayAttendance = key!
+//        }
+//        else{
+//            print ("Couldn't add a create attendance")
+//            
+//            key = ""
+//        }
+    return key
+    }
+    
+    
 
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
+
+
+}
 
 
 

@@ -30,6 +30,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
+<<<<<<< HEAD
 ## DatePickerDialog
 
 Copyright (c) 2014 Vinícius (Squimer)
@@ -54,6 +55,8 @@ THE SOFTWARE.
 
 =======
 >>>>>>> parent of 955b75c... about to split qr code with vc
+=======
+>>>>>>> parent of 11c4cd0... commit with appdelegate bug
 ## Firebase
 
 Copyright 2017 Google

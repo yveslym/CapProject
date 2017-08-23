@@ -12,12 +12,12 @@ import Firebase
 
 class Teacher: NSObject{
     
-    var username: String?
-    var firstName: String?
-    var lastName: String?
-    var email : String?
-    var password:String?
-    var phoneNumber : Int?
+    let username: String?
+    let firstName: String?
+    let lastName: String?
+    let email : String?
+    let password:String?
+    let phoneNumber : Int?
     var uid : String?
     let type = "teacher"
     var course = [Course]()
@@ -52,18 +52,6 @@ class Teacher: NSObject{
         self.uid = ""
         self.profilImage = UIImage()
         
-    }
-    
-    init (withEmail email: String!){
-        self.username = ""
-        self.lastName = ""
-        self.password = ""
-        self.email = email
-        self.firstName = ""
-        self.phoneNumber = 0
-        self.uid = ""
-        self.profilImage = UIImage()
-  
     }
     
     init? (snapshot: DataSnapshot){
