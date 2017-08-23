@@ -9,29 +9,23 @@
 
 import Foundation
 import FirebaseDatabase
-import FirebaseAuth.FIRAuthErrors
+import FirebaseAuth.FIRUser
 import Firebase
 import UIKit
-import SwiftQRCode
-import AVFoundation
-
-
-
-enum FIRAuthErrorCode: Int{
-    case invalidEmail = 17008
-    case wrongPassword = 17009
-    case userNotFound = 17011
-    case weakPassword = 17026
-    case emailAlreadyInUse = 17007
-}
 
 class StudentServices{
     
     
     
+<<<<<<< HEAD
     static func createNewStudent(withEmail email:String!, password: String!, completion: @escaping (Student?) -> Void) {
         
         guard let email   = email, let password = password
+=======
+    static func createNewStudent(_ firUser: FIRUser, student: Student, password: String, completion: @escaping (Student?) -> Void) {
+        
+        guard let email   = student.email
+>>>>>>> parent of 955b75c... about to split qr code with vc
             else {return}
         
         let student = Student()
@@ -39,7 +33,9 @@ class StudentServices{
         Auth.auth().createUser(withEmail: email, password: password, completion: {(Authstudent,error) in
             
             if let error = error {
+                assertionFailure(error.localizedDescription)
                 
+<<<<<<< HEAD
                 if let errorCode = FIRAuthErrorCode(rawValue: (error._code)){
                     switch errorCode{
                     case .emailAlreadyInUse: print("email use/ wait for UIAlert")
@@ -50,9 +46,13 @@ class StudentServices{
                     return completion(nil)
                 }
                 
+=======
+                return completion(nil)
+>>>>>>> parent of 955b75c... about to split qr code with vc
             }
                 
             else{
+<<<<<<< HEAD
                 
                 student.email = email
                 student.password = password
@@ -66,14 +66,20 @@ class StudentServices{
             }
         })//end of sign up
         
+=======
+                NetworkConstant.AddStudentinDatabase(withStudent: student)            }
+        } )//end of sign up
+        
+        Student.setCurrent(student, writeToUserDefault: true)
+        completion(student)
+>>>>>>> parent of 955b75c... about to split qr code with vc
         
     }
     
-    //Function to retrieve student info from the firebase
     
     static func RetrieveStudentInfo(ForUID uid: String, completion: @escaping (Student?)->Void){
         
-        let stringStudent = Constants.studentInfo
+        let stringStudent = " studentInfo"
         
         let ref = NetworkConstant.rootRef.child( uid).child(stringStudent)
         
@@ -91,27 +97,17 @@ class StudentServices{
         })
     }
     
-    static func SignInStudent(email: String!, password: String!, completion: @escaping (Student?)->Void){
+    static func SignInStudent(email: String!, password: String!)->Bool{
         
-        guard let Email = email, let Password = password
-            else {return}
+        var signinsuccess = false
         
-        Auth.auth().signIn(withEmail: Email, password: Password, completion: {(authStudent,error) in
+        Auth.auth().signIn(withEmail: email!, password: password!, completion: {(student, error) in
             
-            if let error = error{
-                
-                if let errorCode = FIRAuthErrorCode(rawValue: (error._code)){
-                    
-                    switch errorCode{
-                    case .invalidEmail: print("invalid email")
-                    case .userNotFound: print("not user with this email and password")
-                    default: print(error.localizedDescription)
-                    }
-                }
+            if error == nil{
+                print(error.debugDescription)
             }
-                
-                
             else{
+<<<<<<< HEAD
                 StudentServices.RetrieveStudentInfo(ForUID: (authStudent?.uid)!, completion: {(student)in
                     if let student = student{
                         Student.setCurrent(student, writeToUserDefault: true)
@@ -120,28 +116,40 @@ class StudentServices{
                     else{
                         print("couldn't retrieve student from firebase")
                     }
+=======
+                let ref = NetworkConstant.studentInfoRef
+                
+                ref.observeSingleEvent(of: .value, with: {(snapshot) in
+                    
+                    guard let student = Student(snapshot: snapshot)
+                        
+                        else{return}
+                    
+                    Student.setCurrent(student, writeToUserDefault: true)
+                    signinsuccess = true
+>>>>>>> parent of 955b75c... about to split qr code with vc
                     
                 })
             }
         })
+        
+        return signinsuccess
     }
-    
-    
-    
     
     
     
     static func logOutStudent()->Bool{
         
-             ///////////////////////////////////////
-            //                                  //
-           // logout logic need to be add here//
-          //                                //
+        ////////////////////////////////////////
+        //                                   //
+        // logout logic need to be add here //
+        //                                 //
         ////////////////////////////////////
         
         return true
     }
     
+<<<<<<< HEAD
     
     static func ScanAttendance (withStudent student: Student, completion:@escaping (Bool)->Void){
        
@@ -206,6 +214,8 @@ class StudentServices{
         })
 
     }
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
 }
 
 

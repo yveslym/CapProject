@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "24B712A3498A4274AF046361F64CA66D"
+=======
+               BlueprintIdentifier = "BE6D469DB6F06077D046B1EFEF87B767"
+>>>>>>> parent of 955b75c... about to split qr code with vc
                BuildableName = "Pods_CapProject.framework"
                BlueprintName = "Pods-CapProject"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +49,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "24B712A3498A4274AF046361F64CA66D"
+=======
+            BlueprintIdentifier = "BE6D469DB6F06077D046B1EFEF87B767"
+>>>>>>> parent of 955b75c... about to split qr code with vc
             BuildableName = "Pods_CapProject.framework"
             BlueprintName = "Pods-CapProject"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -4,6 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+<<<<<<< HEAD
 		<key>ActionSheetPicker-3.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,6 +15,8 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
 		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,11 +33,6 @@
 			<false/>
 		</dict>
 		<key>Pods-CapProject.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftQRCode.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,7 +55,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>24B712A3498A4274AF046361F64CA66D</key>
+=======
+		<key>BE6D469DB6F06077D046B1EFEF87B767</key>
+>>>>>>> parent of 955b75c... about to split qr code with vc
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,6 +69,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>965699190112DDBD9B7864D091660DBC</key>
 		<dict>
 			<key>primary</key>
@@ -77,16 +80,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
 		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
 		<key>EAEB7EE7A4C4764EF40EDFE2CF59C5CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
 	</dict>
 </dict>
 </plist>

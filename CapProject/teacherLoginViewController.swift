@@ -9,6 +9,41 @@
 import UIKit
 
 class teacherLoginViewController: UIViewController {
+<<<<<<< HEAD
+=======
+
+    
+    
+    @IBOutlet weak var email: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "teacherRegister", sender: self)
+        
+    }
+    
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        if TeacherServices.SignIn(withEmail: email.text!, password: password.text!) == true{
+            let initialVC = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = initialVC
+            self.view.window?.makeKeyAndVisible()
+
+            
+        }
+        else{
+            print("COULD NOT LOGIN")
+        }
+    }
+    
+    
+    
+    
+    
+>>>>>>> parent of 955b75c... about to split qr code with vc
     
  
     

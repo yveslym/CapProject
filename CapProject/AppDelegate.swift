@@ -20,7 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+<<<<<<< HEAD
         configureInitialVC(for: window)
+=======
+        configureInitialleVC(for: window)
+>>>>>>> parent of 955b75c... about to split qr code with vc
         
         // Override point for customization after application launch.
         return true

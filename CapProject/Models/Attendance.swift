@@ -7,21 +7,19 @@
 //
 
 import Foundation
-import Firebase
 class Attendance: NSObject{
     
     private var date: Date?
-    private var present: Bool = false
-    private var late: Bool = false
-    private var absent : Bool = false
-    private var startTime = String()
-    private var endTime = String()
-    var AttendanceID  = String()
+    private var present: Bool?
+    private var late: Bool?
+    private var absent: Bool?
+    private var startTime: String?
+    private var endTime: String?
     
     func marckPresent(){return self.present = true}
-    
+
     func markLate(){return self.late        = true}
-    
+
     func markAbsent(){return self.absent    = true}
     
     override init(){
@@ -30,6 +28,7 @@ class Attendance: NSObject{
         self.late    = false
     }
     
+<<<<<<< HEAD
     init?(snapshot: DataSnapshot) {
         
         guard let dict = snapshot.value as? [String: Any]
@@ -42,16 +41,6 @@ class Attendance: NSObject{
         // add the time condition, if student scan in certain time he will be mark present or late
         self.present = true
     }
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
 }
-
-
-
-
-
-
-
-
-
-
-
-

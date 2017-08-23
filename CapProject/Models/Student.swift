@@ -11,16 +11,23 @@ import FirebaseDatabase
 import Firebase
 class Student: NSObject{
     
+<<<<<<< HEAD
     var username: String?
     var firstName: String?
     var lastName: String?
     var email : String?
     var password:String?
+=======
+    let username: String?
+    let firstName: String?
+    let lastName: String?
+    let email : String?
+    let password:String?
+>>>>>>> parent of 955b75c... about to split qr code with vc
     let phoneNumber : Int?
     var uid : String?
     let type = "student"
-   var course = [Course]()
-    var level: String?
+    var classes = [Classes]()
     
     private static var _current: Student?
     
@@ -41,18 +48,7 @@ class Student: NSObject{
         self.phoneNumber = 0
     }
     
-    init (withEmail email: String, password: String){
-        self.firstName = ""
-        self.lastName  = ""
-        self.email     = email
-        self.username  = ""
-        self.password  = password
-        self.uid       = ""
-        self.phoneNumber = 0
-
-    }
-    
-    init(firstname: String = "", lastname: String = "",Username:String = "",email:String = "", password:String = "", phone: Int = 0){
+    init(firstname: String, lastname: String,Username:String,email:String, password:String, phone: Int){
         self.firstName = firstname
         self.lastName  = lastname
         self.email     = email
@@ -106,11 +102,12 @@ class Student: NSObject{
         }
     }
     
-    func AddCourse (withCourse course: Course!){
-        self.course.append(course)
+    func CreateNewClass(withClass Class: Classes){
+        self.classes.append(Class)
     }
-
 }
+
+
 
 
 

@@ -11,10 +11,11 @@ import UIKit
 class chooseUserViewController: UIViewController {
 
     
-    @IBOutlet weak var studentButton: UIButton!
-   
+    @IBOutlet weak var StudentButton: UIButton!
+    
     @IBOutlet weak var teacherButton: UIButton!
     
+<<<<<<< HEAD
     var teacherSelected = false
     var studentSelected = false
     
@@ -22,13 +23,23 @@ class chooseUserViewController: UIViewController {
     @IBAction func studentButtonTapped(_ sender: Any) {
         let login = "login"
         performSegue(withIdentifier: login, sender: self)
+=======
+    
+    @IBAction func studentButtonTapped(_ sender: Any) {
+        
+        let login = "login"
+        self.performSegue(withIdentifier: login, sender:self)
+        
+>>>>>>> parent of 955b75c... about to split qr code with vc
     }
     
-    
     @IBAction func teacherButtonTapped(_ sender: Any) {
+<<<<<<< HEAD
         let login = "login"
         teacherSelected = true
         self.performSegue(withIdentifier: login, sender: self)
+=======
+>>>>>>> parent of 955b75c... about to split qr code with vc
         
     }
     
@@ -46,8 +57,6 @@ class chooseUserViewController: UIViewController {
         }
         
     }
-    
-    
     
     
     override func viewDidLoad() {

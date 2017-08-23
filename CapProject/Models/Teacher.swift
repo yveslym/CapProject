@@ -6,12 +6,9 @@
 //  Copyright © 2017 Yveslym. All rights reserved.
 //
 
-import UIKit
 import Foundation
 import FirebaseDatabase
 import Firebase
-import SwiftQRCode
-
 
 class Teacher: NSObject{
     
@@ -112,59 +109,13 @@ class Teacher: NSObject{
             self.uid = Auth.auth().currentUser?.uid
         }
     }
-    //function to create course with course as parameter
+
     func createCourse(withCourse course: Course){
         self.course.append(course)
     }
     
-    // function to generate qr code with SwiftQRCode framework
-    func genrateQRCode(CourseIndex index:Int, iconView: UIImageView){
-        
-        let courseID = course[index].courseID
-        let todayAttendance = course[index].todayAttendance
-        let error = NSError()
-        
-        if  course[index].courseID == "" {
-            
-            CourseServices.create(withCoourse: self.course[index], completion: {(created) in
-                
-                print ("course created: \(String(describing: created))")
-            })
-        }
-        
-        if self.isTodayAttendanceExist(CourseIndex: index) == true{
-            iconView.image = QRCode.generateImage((courseID)! + " " + (todayAttendance)!, avatarImage: UIImage(named: "avatar"), avatarScale: 0.3)
-        }
-        else{
-            
-            var newAttendance : String?
-            CourseServices.createAttendance(withCourse: course[index], completion: {(attendance)in
-                
-                //let key  = ""
-                
-                if let key = attendance{
-                    newAttendance = key
-                    print("key in")
-                }
-                else{
-                    print("no key")
-                }
-            })
-            if  newAttendance != ""{
-                iconView.image = QRCode.generateImage((courseID)! + " " + (newAttendance)!, avatarImage: UIImage(named: "avatar"), avatarScale: 0.3)
-            }
-            else {
-                print("errrrrooooorrrrrr")
-                fatalError(error.localizedDescription)
-                
-            }
-        }
-    }
-    
-    func isTodayAttendanceExist(CourseIndex index:Int)->Bool{
-        return (self.course[index].todayAttendance != nil) ?  true :  false
-    }
 }
+
 
 
 

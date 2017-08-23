@@ -15,7 +15,7 @@ class Helpers{
     static func checkEmailEdu(forEmail email: String)-> Bool{
         var correct: Bool = false
         
-        if email.hasSuffix("@gmail.com"){
+        if email.hasSuffix(".edu"){
             correct = true
             return correct
         }
